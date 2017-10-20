@@ -1,2 +1,2 @@
 # enjoy_vegan_hp
-website of Enjoy VEGAN JAPAN
+This is the Enjoy Vegan Japan website repo.
