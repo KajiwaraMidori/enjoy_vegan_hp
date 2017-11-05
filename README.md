@@ -27,5 +27,3 @@ This is the Enjoy Vegan Japan website repo.
   https://qiita.com/purio/items/416a6762583c087ece61
 - `mysql -uroot` then `SHOW DATABASES;` to see list of databases.  
   https://dev.mysql.com/doc/refman/5.7/en/mysql.html
-
-Application Script
