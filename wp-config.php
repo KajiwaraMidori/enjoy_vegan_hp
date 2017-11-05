@@ -26,13 +26,14 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'db_vegan');
+define('DB_NAME', 'wp_vegan_db');
 
+// TODO: 以下のユーザー名・パスワードの環境変数の秘匿化
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'midori');
+define('DB_USER', 'wp_vegan_server');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', '12345');
+define('DB_PASSWORD', '09876');
 
 /** MySQL のホスト名 */
 define('DB_HOST', 'localhost:/tmp/mysql.sock');
