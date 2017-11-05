@@ -22,7 +22,7 @@ This is the Enjoy Vegan Japan website repo.
 - `mysql.server stop`
 
 ## Reference
-- If experiencing permission issues, run `sudo chmod drwxr-xr-x`.
+- If experiencing permission issues, run `sudo chmod 755` to /vegan/enjoy_vegan_hp.
 - MacOS Wordpress installation instructions here:  
   https://qiita.com/purio/items/416a6762583c087ece61
 - `mysql -uroot` then `SHOW DATABASES;` to see list of databases.  
