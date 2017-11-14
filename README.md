@@ -30,4 +30,5 @@ This is the Enjoy Vegan Japan website repo.
 - MacOS
   - [How to install Wordpress on MacOS](https://qiita.com/purio/items/416a6762583c087ece61)    
   - [How to update MacOS PHP to the latest version](https://php-osx.liip.ch/)
-
+  - Make sure that Apache's `httpd.conf`'s `User` setting is set to the Mac User,  
+    or else updates and theme/plugin installs will fail to work.
