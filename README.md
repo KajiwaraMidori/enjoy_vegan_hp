@@ -7,7 +7,8 @@ This is the Enjoy Vegan Japan website repo.
 
 ## Get Started
 - Install all requirements
-- Open Apache's `httpd.conf` and 
+- Open Apache's `/etc/apache2/httpd.conf` and follow 2 steps
+  comment out 'LoadModule php5_module libexec/apache2/libphp5.so'
   set `DocumentRoot` and `Directory` to this repo's `index.php`
 - `git clone https://github.com/KajiwaraMidori/enjoy_vegan_hp`
 - `cd enjoy_vegan_hp`
