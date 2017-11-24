@@ -16,7 +16,7 @@ This is the Enjoy Vegan Japan website repo.
 - `mysql> GRANT all privileges ON wp_vegan_db.* TO 'wp_vegan_server'@'localhost';`
 - `mysql> QUIT;`
 - `sudo apachectl start`
-- goto `localhost`
+- open `http://localhost/wp-admin` in your favorite browser
 
 ## Shutting down
 - `sudo apachectl stop`
