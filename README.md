@@ -16,6 +16,7 @@ This is the Enjoy Vegan Japan website repo.
 - `mysql> GRANT all privileges ON wp_vegan_db.* TO 'wp_vegan_server'@'localhost';`
 - `mysql> QUIT;`
 - `sudo apachectl start`
+- open `http://localhost/wp-admin` in your favorite browser
 
 ## Shutting down
 - `sudo apachectl stop`
@@ -31,4 +32,3 @@ This is the Enjoy Vegan Japan website repo.
   - Open Apache's `/etc/apache2/httpd.conf` and follow 2 steps
     comment out 'LoadModule php5_module libexec/apache2/libphp5.so'
     set `DocumentRoot` and `Directory` to this repo's `index.php`
-
