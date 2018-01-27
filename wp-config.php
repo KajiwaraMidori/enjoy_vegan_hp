@@ -25,13 +25,12 @@
 // を使用し、必ず UTF-8 の BOM なし (UTF-8N) で保存してください。
 
 // ** MySQL settings - You can get this info from your web host ** //
-$url = parse_url(getenv('DATABASE_URL') ? getenv('DATABASE_URL') : getenv('CLEARDB_DATABASE_URL'));
+$url = parse_url(getenv('LOCAL_DATABASE_URL') ? getenv('LOCAL_DATABASE_URL') : getenv('CLEARDB_DATABASE_URL'));
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
 define('DB_NAME', trim($url['path'], '/'));
 
-// TODO: 以下のユーザー名・パスワードの環境変数の秘匿化
 /** MySQL データベースのユーザー名 */
 define('DB_USER', $url['user']);
 

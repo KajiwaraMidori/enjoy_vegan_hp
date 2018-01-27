@@ -9,12 +9,8 @@ This is the Enjoy Vegan Japan website repo.
 - Install all requirements
 - `git clone https://github.com/KajiwaraMidori/enjoy_vegan_hp`
 - `cd enjoy_vegan_hp`
+- `LOCAL_DATABASE_URL = mysql://wp_vegan_server:09876@127.0.0.1/wp_vegan_db`
 - `mysql.server start`
-- `mysql -uroot`
-- `mysql> CREATE USER 'wp_vegan_server'@'localhost' IDENTIFIED BY '09876';`
-- `mysql> CREATE DATABASE wp_vegan_db;`
-- `mysql> GRANT all privileges ON wp_vegan_db.* TO 'wp_vegan_server'@'localhost';`
-- `mysql> QUIT;`
 - `sudo apachectl start`
 - open `http://localhost/wp-admin` in your favorite browser
 
@@ -22,9 +18,24 @@ This is the Enjoy Vegan Japan website repo.
 - `sudo apachectl stop`
 - `mysql.server stop`
 
-
 ## Deploy to Heroku
-Heroku login
+- `heroku login`
+- `heroku create`
+- `heroku addons:add cleardb`
+- `heroku addons:add sendgrid`
+- `heroku addons:add memcachier`
+- `heroku addons:add papertrail`
+- `heroku addons:add newrelic`
+- `CLEARDB_DATABASE_URL = mysql://root:123abc@127.0.0.1/my_wordpress_heroku_database_name`
+
+heroku config:set AUTH_KEY=''
+heroku config:set SECURE_AUTH_KEY=''
+heroku config:set LOGGED_IN_KEY=''
+heroku config:set NONCE_KEY=''
+heroku config:set AUTH_SALT=''
+heroku config:set SECURE_AUTH_SALT=''
+heroku config:set LOGGED_IN_SALT=''
+heroku config:set NONCE_SALT=''
 Heroku config | grep CLEARDB_DATABASE_URL
 
 mysql -u b9e73ed6c0c016 -p -h eu-cdbr-west-02.cleardb.net -D heroku_136fc16938ec963
