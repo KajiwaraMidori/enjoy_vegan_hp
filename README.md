@@ -26,6 +26,7 @@ This is the Enjoy Vegan Japan website repo.
 - If experiencing permission issues, run `sudo chmod 755` to /vegan/enjoy_vegan_hp.
 - `mysql -uroot` then `SHOW DATABASES;` to see list of databases.  
   https://dev.mysql.com/doc/refman/5.7/en/mysql.html
+- This wordpress project uses [child themes](https://codex.wordpress.org/Child_Themes).
 - MacOS
   - [How to install Wordpress on MacOS](https://qiita.com/purio/items/416a6762583c087ece61)    
   - [How to update MacOS PHP to the latest version](https://php-osx.liip.ch/)
