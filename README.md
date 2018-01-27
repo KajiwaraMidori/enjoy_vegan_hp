@@ -22,6 +22,14 @@ This is the Enjoy Vegan Japan website repo.
 - `sudo apachectl stop`
 - `mysql.server stop`
 
+
+## Deploy to Heroku
+Heroku login
+Heroku config | grep CLEARDB_DATABASE_URL
+
+mysql -u b9e73ed6c0c016 -p -h eu-cdbr-west-02.cleardb.net -D heroku_136fc16938ec963
+then enter pw.
+
 ## Reference
 - If experiencing permission issues, run `sudo chmod 755` to /vegan/enjoy_vegan_hp.
 - `mysql -uroot` then `SHOW DATABASES;` to see list of databases.  
