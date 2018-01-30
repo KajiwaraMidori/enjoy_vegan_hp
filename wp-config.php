@@ -24,19 +24,22 @@
 // (http://wpdocs.osdn.jp/%E7%94%A8%E8%AA%9E%E9%9B%86#.E3.83.86.E3.82.AD.E3.82.B9.E3.83.88.E3.82.A8.E3.83.87.E3.82.A3.E3.82.BF 参照)
 // を使用し、必ず UTF-8 の BOM なし (UTF-8N) で保存してください。
 
+$LOCAL_DATABASE_URL = "mysql://wp_vegan_server:09876@127.0.0.1/wp_vegan_db";
+// ** MySQL settings - You can get this info from your web host ** //
+$url = parse_url(getenv('CLEARDB_DATABASE_URL') ? getenv('CLEARDB_DATABASE_URL') : $LOCAL_DATABASE_URL);
+
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'wp_vegan_db');
+define('DB_NAME', trim($url['path'], '/'));
 
-// TODO: 以下のユーザー名・パスワードの環境変数の秘匿化
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'wp_vegan_server');
+define('DB_USER', $url['user']);
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', '09876');
+define('DB_PASSWORD', $url['pass']);
 
 /** MySQL のホスト名 */
-define('DB_HOST', 'localhost:/tmp/mysql.sock');
+define('DB_HOST', $url['host']);
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8');
