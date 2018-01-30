@@ -11,11 +11,10 @@ This is the Enjoy Vegan Japan website repo.
 - `cd enjoy_vegan_hp`
 - `mysql.server start`
 - `mysql -uroot`
-- `CREATE USER 'wp_vegan_server'@'localhost' IDENTIFIED BY '09876';`
-- `CREATE DATABASE wp_vegan_db;`
-- `GRANT all privileges ON wp_vegan_db.* TO 'wp_vegan_server'@'localhost';`
-- `QUIT;`
-- `mysql.server start`
+- `mysql> CREATE USER 'wp_vegan_server'@'localhost' IDENTIFIED BY '09876';`
+- `mysql> CREATE DATABASE wp_vegan_db;`
+- `mysql> GRANT all privileges ON wp_vegan_db.* TO 'wp_vegan_server'@'localhost';`
+- `mysql> QUIT;`
 - `sudo apachectl start`
 - open `http://localhost/wp-admin` in your favorite browser
 
