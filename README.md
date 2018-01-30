@@ -9,7 +9,7 @@ This is the Enjoy Vegan Japan website repo.
 - Install all requirements
 - `git clone https://github.com/KajiwaraMidori/enjoy_vegan_hp`
 - `cd enjoy_vegan_hp`
-- `LOCAL_DATABASE_URL = mysql://wp_vegan_server:09876@127.0.0.1/wp_vegan_db`
+- `mysql.server start`
 - `mysql -uroot`
 - `CREATE USER 'wp_vegan_server'@'localhost' IDENTIFIED BY '09876';`
 - `CREATE DATABASE wp_vegan_db;`
