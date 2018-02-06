@@ -18,7 +18,8 @@
 - In order to reset your installation of wordpress:
   - Find the envvar `CLEARDB_DATABASE_URL` in the [heroku dashboard](https://dashboard.heroku.com).
   - bash `mysql --user {user} --password={pw} -h {host} -D {database}` based on envvar.
-  - DROP all TABLES.
+  - DROP all TABLES with this command:  
+    `DROP TABLE IF EXISTS wp_commentmeta, wp_comments, wp_links, wp_options, wp_postmeta, wp_posts, wp_term_relationships, wp_term_taxonomy, wp_termmeta, wp_terms, wp_usermeta, wp_users;`
   - [Access the top domain](https://enjoy-vegan.herokuapp.com/).
   - You should be navigated through the WP installation process.
   - Make sure you note the WP admin password and keep it in a safe location!
