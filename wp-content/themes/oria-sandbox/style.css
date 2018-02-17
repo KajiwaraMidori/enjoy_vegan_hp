@@ -1219,8 +1219,8 @@ Slider
 --------------------------------------------------------------*/
 .site-header {
 	background-position: center top;
-	background-attachment: fixed;
-	background-size: cover;
+	background-attachment: local;
+	background-size: contain, 70%;
 	background-repeat: no-repeat;
 	position: relative;
 }
