@@ -595,6 +595,16 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Structure
+--------------------------------------------------------------*/
+.site-header {
+	background-position: center top;
+	background-attachment: local;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
