@@ -10,10 +10,8 @@
 	 *
 	 * @package enjoy_vegan_one
 	 */
-?>
 
 
-<?php
 	/**
 	 * Set up the WordPress core custom header feature.
 	 *
@@ -21,7 +19,7 @@
 	 */
 	function enjoy_vegan_one_custom_header_setup() {
 		add_theme_support( 'custom-header', apply_filters( 'enjoy_vegan_one_custom_header_args', array(
-			'default-image'          => '',
+			'default-image'          => get_parent_theme_file_uri( '/images/1_header/japan_map.png' ),
 			'default-text-color'     => '000000',
 			'width'                  => 1000,
 			'height'                 => 250,
@@ -30,10 +28,8 @@
 		) ) );
 	}
 	add_action( 'after_setup_theme', 'enjoy_vegan_one_custom_header_setup' );
-?>
 
 
-<?php
 	if ( ! function_exists( 'enjoy_vegan_one_header_style' ) ){
 		/**
 		 * Styles the header image and text displayed on the blog.
@@ -52,26 +48,33 @@
 			}
 
 			// If we get this far, we have custom styles. Let's do this.
-			?> <style type="text/css"> <?php
-				// Has the text been hidden?
-				if ( ! display_header_text() ){
-				?>
-					.site-title,
-					.site-description {
-						position: absolute;
-						clip: rect(1px, 1px, 1px, 1px);
-					}
-				<?php
-				} else {
-				// If the user has set a custom color for the text use that.
-				?>
-					.site-title a,
-					.site-description {
-						color: #<?php echo esc_attr( $header_text_color ); ?>;
-					}
-				<?php
-			 	}
-			?> </style> <?php
+			?>
+				<style type="text/css">
+					<?php　if( get_header_image() ) {　?>
+						<style type="text/css">
+							.site-header {
+								background-image: url(<?php echo get_header_image(); ?>);
+							}
+						</style>
+					<?php　}　?>
+
+					<?php // Has the text been hidden? ?>
+					<?php if( !display_header_text() ){ ?>
+
+						.site-title,
+						.site-description {
+							position: absolute;
+							clip: rect(1px, 1px, 1px, 1px);
+						}
+					<?php // If the user has set a custom color for the text use that. ?>
+					<?php } else { ?>
+						.site-title a,
+						.site-description {
+							color: #<?php echo esc_attr( $header_text_color ); ?>;
+						}
+					<?php	} ?>
+				</style>
+			<?php
 		}
 	}
 ?>
