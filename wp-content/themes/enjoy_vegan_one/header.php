@@ -37,8 +37,8 @@
 		<nav
 			id="site-navigation"
 			class="navbar main-navigation navbar-default navbar-fixed-top topnav"
-			role="navigation""
-		>
+			role="navigation"" >
+
 			<button
 				class="menu-toggle"
 				aria-controls="primary-menu"
@@ -56,14 +56,19 @@
 		</nav><!-- #site-navigation -->
 
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title">
+			<?php if ( is_front_page() && is_home() ) : ?>
+				<div class="site-title">
+		      <img
+						src="<?php echo get_template_directory_uri()?>/images/1_header/japan_map.png"
+						alt=""
+					/>
+		      <h1>
+						<?php the_custom_logo(); ?>
+					</h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<?php bloginfo( 'name' ); ?>
 					</a>
-				</h1>
+				</div>
 			<?php else : ?>
 				<p class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -79,8 +84,6 @@
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
-
-
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
