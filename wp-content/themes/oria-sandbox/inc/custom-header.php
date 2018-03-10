@@ -24,9 +24,13 @@
  */
 function oria_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'oria_custom_header_args', array(
-		'default-image'          => get_template_directory_uri() . '/images/header.png',
+		'default-image'          => get_template_directory_uri() . '/images/header.jpg',
 		'default-text-color'     => '000000',
-		'uploads'                => false,
+		'width'                  => 1920,
+		'height'                 => 850,
+		// 'height'                 => 2850,
+		// 'flex-height'            => false,
+		'flex-height'            => true,
 		'wp-head-callback'       => 'oria_header_style',
 		'admin-head-callback'    => 'oria_admin_header_style',
 		'admin-preview-callback' => 'oria_admin_header_image',
@@ -41,11 +45,12 @@ if ( ! function_exists( 'oria_header_style' ) ) :
  * @see oria_custom_header_setup().
  */
 function oria_header_style() {
-	if ( get_header_image() ) {
+	if ( get_header_image() ) {	
 		?>
 		<style type="text/css">
 			.site-header {
 				background-image: url(<?php echo get_header_image(); ?>);
+				width : 30; 
 			}
 		</style>
 		<?php
