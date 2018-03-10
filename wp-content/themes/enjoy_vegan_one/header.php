@@ -33,28 +33,6 @@
 	</a>
 
 	<header id="masthead" class="site-header">
-		<!-- Navigation -->
-		<nav
-			id="site-navigation"
-			class="navbar main-navigation navbar-default navbar-fixed-top topnav"
-			role="navigation"" >
-
-			<button
-				class="menu-toggle"
-				aria-controls="primary-menu"
-				aria-expanded="false"
-			>
-				<?php esc_html_e( 'Menu', 'enjoy_vegan_one' ); ?>
-			</button>
-
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
-
 		<div class="site-branding">
 			<?php if ( is_front_page() && is_home() ) : ?>
 				<div class="site-title">
@@ -94,6 +72,27 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
+			<!-- Navigation -->
+			<nav
+				id="site-navigation"
+				class="navbar main-navigation navbar-default navbar-fixed-top topnav"
+				role="navigation"" >
+
+				<button
+					class="menu-toggle"
+					aria-controls="primary-menu"
+					aria-expanded="false"
+				>
+					<?php esc_html_e( 'Menu', 'enjoy_vegan_one' ); ?>
+				</button>
+
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					) );
+				?>
+			</nav><!-- #site-navigation -->
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 
