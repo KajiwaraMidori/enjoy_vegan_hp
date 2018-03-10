@@ -1,2 +1,5 @@
 # .DS_Storeファイルは無視する
 .DS_Store
+
+# WPの画像自動拡大縮小サイズ生成機能うざい
+wp-content/uploads/*
