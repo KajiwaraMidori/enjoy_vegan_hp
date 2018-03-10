@@ -597,11 +597,23 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Structure
 --------------------------------------------------------------*/
-.site-header {
-	background-position: center top;
-	background-attachment: local;
-	background-repeat: no-repeat;
+
+.site-title {
+	display: block;
 	position: relative;
+}
+
+.map-japan {
+	width: 100%
+}
+
+.site-logo {
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   width: 50%;
+   height: 50%;
+   margin: 0;
 }
 
 /*--------------------------------------------------------------

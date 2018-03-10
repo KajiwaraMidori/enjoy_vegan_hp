@@ -59,14 +59,25 @@
 			<?php if ( is_front_page() && is_home() ) : ?>
 				<div class="site-title">
 		      <img
+						class="map-japan"
 						src="<?php echo get_template_directory_uri()?>/images/1_header/japan_map.png"
-						alt=""
+						alt="click on a city to see it's restaurants!"
 					/>
-		      <h1>
-						<?php the_custom_logo(); ?>
+		      <h1 class="site-logo">
+						<a
+							href="<?php echo esc_url( home_url( '/' ) ); ?>"
+							rel="home"
+							>
+							<?php the_custom_logo(); ?>
+							<img
+								src="<?php echo get_template_directory_uri()?>/images/1_header/evj_logo.png"
+								alt="Enjoy Vegan Japan logo"
+							/>
+							<!-- <?php bloginfo( 'name' ); ?> -->
+						</a>
 					</h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<?php bloginfo( 'name' ); ?>
+
 					</a>
 				</div>
 			<?php else : ?>
