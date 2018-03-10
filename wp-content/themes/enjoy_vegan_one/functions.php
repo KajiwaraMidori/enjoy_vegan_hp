@@ -47,10 +47,8 @@ if ( ! function_exists( 'enjoy_vegan_one_setup' ) ) :
 			'menu-1' => esc_html__( 'Primary', 'enjoy_vegan_one' ),
 		) );
 
-		/*
-		 * Switch default core markup for search form, comment form, and comments
-		 * to output valid HTML5.
-		 */
+
+		// Switch default core markup for search form, comment form, and comments to output valid HTML5.
 		add_theme_support( 'html5', array(
 			'search-form',
 			'comment-form',
@@ -113,9 +111,8 @@ function enjoy_vegan_one_widgets_init() {
 }
 add_action( 'widgets_init', 'enjoy_vegan_one_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
+
+// Enqueue scripts and styles.
 function enjoy_vegan_one_scripts() {
 	wp_enqueue_style( 'enjoy_vegan_one-style', get_stylesheet_uri() );
 
@@ -129,30 +126,19 @@ function enjoy_vegan_one_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'enjoy_vegan_one_scripts' );
 
-/**
- * Implement the Custom Header feature.
- */
+// Custom Header feature
 require get_template_directory() . '/inc/custom-header.php';
 
-/**
- * Custom template tags for this theme.
- */
+// Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
 
-/**
- * Functions which enhance the theme by hooking into WordPress.
- */
+// Functions which enhance the theme by hooking into WordPress.
 require get_template_directory() . '/inc/template-functions.php';
 
-/**
- * Customizer additions.
- */
+// Customizer additions.
 require get_template_directory() . '/inc/customizer.php';
 
-/**
- * Load Jetpack compatibility file.
- */
+// Load Jetpack compatibility file.
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
