@@ -38,7 +38,7 @@
 				<div class="site-title">
 		      <img
 						class="map-japan"
-						src="<?php echo get_template_directory_uri()?>/images/1_header/japan_map.png"
+						src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.png"
 						alt="click on a city to see it's restaurants!"
 					/>
 		      <h1 class="site-logo">
@@ -48,7 +48,7 @@
 							>
 							<?php the_custom_logo(); ?>
 							<img
-								src="<?php echo get_template_directory_uri()?>/images/1_header/evj_logo.png"
+								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.png"
 								alt="Enjoy Vegan Japan logo"
 							/>
 							<!-- <?php bloginfo( 'name' ); ?> -->
