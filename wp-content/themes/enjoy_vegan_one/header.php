@@ -34,7 +34,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php if ( is_front_page() && is_home() ) : ?>
+			<?php if ( is_front_page() && is_home() ){ ?>
 				<div class="site-title">
 		      <img
 						class="map-japan"
@@ -43,35 +43,38 @@
 					/>
 		      <h1 class="site-logo">
 						<a
-							href="<?php echo esc_url( home_url( '/' ) ); ?>"
+							href="<?php echo esc_url( home_url( '/' ) );?>"
 							rel="home"
 							>
-							<?php the_custom_logo(); ?>
+							<!-- <?php the_custom_logo(); ?> -->
+							<!-- <?php bloginfo( 'name' ); ?> -->
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.png"
 								alt="Enjoy Vegan Japan logo"
 							/>
-							<!-- <?php bloginfo( 'name' ); ?> -->
+							<?php
+								$description = get_bloginfo( 'description', 'display' );
+								if ( $description || is_customize_preview() ){
+									?>
+										<p class="site-description">
+											<?php echo $description; /* WPCS: xss ok. */ ?>
+										</p>
+									<?php
+								}
+							?>
 						</a>
 					</h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-
 					</a>
 				</div>
-			<?php else : ?>
+			<?php } else { ?>
 				<p class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<?php bloginfo( 'name' ); ?>
 					</a>
 				</p>
-			<?php
-			endif;
+			<?php } ?>
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
 			<!-- Navigation -->
 			<nav
 				id="site-navigation"
