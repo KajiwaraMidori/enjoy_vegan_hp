@@ -15,9 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<p>
 			Copyright &#9426 2018 <?php bloginfo('name'); ?> All Rights Reserved.
-			</p> 
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
