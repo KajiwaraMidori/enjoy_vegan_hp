@@ -34,44 +34,92 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php if ( is_front_page() && is_home() ) : ?>
-				<div class="site-title">
-		      <img
-						class="map-japan"
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.png"
-						alt="click on a city to see it's restaurants!"
-					/>
-		      <h1 class="site-logo">
-						<a
-							href="<?php echo esc_url( home_url( '/' ) ); ?>"
-							rel="home"
-							>
-							<?php the_custom_logo(); ?>
-							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.png"
-								alt="Enjoy Vegan Japan logo"
+			<?php
+				if ( is_front_page() && is_home() ){
+					?>
+						<div class="site-header-title">
+				      <img
+								class="site-header-map-japan"
+								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.png"
+								alt="click on a city to see it's restaurants!"
 							/>
-							<!-- <?php bloginfo( 'name' ); ?> -->
-						</a>
-					</h1>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<div class="site-header-map-tokyo">
+								<a
+									href="<?php echo esc_url( home_url( '/' ));?>archives/tag/tokyo"
+									rel="search in Tokyo"
+									>
+									<img
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/h_tokyo_button.png"
+										alt="click here to search by hashtag!"
+										/>
+								</a>
+							</div>
+							<div class="site-header-map-kyoto">
+								<a
+									href="<?php echo esc_url( home_url( '/' ));?>archives/tag/kyoto"
+									rel="search in Kyoto"
+									>
+									<img
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/h_kyoto_button.png"
+										alt="click here to search by hashtag!"
+										/>
+								</a>
+							</div>
+				      <div class="site-header-logo">
+								<a
+									href="<?php echo esc_url( home_url( '/' ) );?>"
+									rel="home"
+									>
+									<!-- <?php the_custom_logo(); ?> -->
+									<!-- <?php bloginfo( 'name' ); ?> -->
+									<img
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.png"
+										alt="Enjoy Vegan Japan logo"
+									/>
+								</a>
+								<?php
+									$description = get_bloginfo( 'description', 'display' );
+									if ( $description || is_customize_preview() ){
+										?>
+											<div class="site-header-description">
+												<?php echo $description; /* WPCS: xss ok. */ ?>
+											</div>
+										<?php
+									}
+								?>
+							</div>
+							<div class="site-header-search">
+								<div>
+									<img class="aligncenter"
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/click_search.png"
+										alt="click here to search by hashtag!"
+									/>
+								</div>
+								<a
+									href="<?php echo esc_url( home_url( '/' ) );?>"
+									rel="search by hashtag"
+									>
+									<div>
+										<img
+											src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/search_hashtag_button.png"
+											alt="click here to search by hashtag!"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+					<?php
+				} else {
+					?>
+						<p class="site-header-title">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<?php bloginfo( 'name' ); ?>
+							</a>
+						</p>
+					<?php
+				}
+			?>
 
-					</a>
-				</div>
-			<?php else : ?>
-				<p class="site-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<?php bloginfo( 'name' ); ?>
-					</a>
-				</p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
 			<!-- Navigation -->
 			<nav
 				id="site-navigation"
