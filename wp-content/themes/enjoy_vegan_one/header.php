@@ -34,46 +34,52 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php if ( is_front_page() && is_home() ){ ?>
-				<div class="site-title">
-		      <img
-						class="map-japan"
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.png"
-						alt="click on a city to see it's restaurants!"
-					/>
-		      <h1 class="site-logo">
-						<a
-							href="<?php echo esc_url( home_url( '/' ) );?>"
-							rel="home"
-							>
-							<!-- <?php the_custom_logo(); ?> -->
-							<!-- <?php bloginfo( 'name' ); ?> -->
-							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.png"
-								alt="Enjoy Vegan Japan logo"
+			<?php
+				if ( is_front_page() && is_home() ){
+					?>
+						<div class="site-title">
+				      <img
+								class="map-japan"
+								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.png"
+								alt="click on a city to see it's restaurants!"
 							/>
-							<?php
-								$description = get_bloginfo( 'description', 'display' );
-								if ( $description || is_customize_preview() ){
-									?>
-										<p class="site-description">
-											<?php echo $description; /* WPCS: xss ok. */ ?>
-										</p>
-									<?php
-								}
-							?>
-						</a>
-					</h1>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					</a>
-				</div>
-			<?php } else { ?>
-				<p class="site-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<?php bloginfo( 'name' ); ?>
-					</a>
-				</p>
-			<?php } ?>
+				      <div class="site-logo">
+								<a
+									href="<?php echo esc_url( home_url( '/' ) );?>"
+									rel="home"
+									>
+									<!-- <?php the_custom_logo(); ?> -->
+									<!-- <?php bloginfo( 'name' ); ?> -->
+									<img
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.png"
+										alt="Enjoy Vegan Japan logo"
+									/>
+								</a>
+								<?php
+									$description = get_bloginfo( 'description', 'display' );
+									if ( $description || is_customize_preview() ){
+										?>
+											<div class="site-description">
+												<?php echo $description; /* WPCS: xss ok. */ ?>
+											</div>
+										<?php
+									}
+								?>
+							</div>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							</a>
+						</div>
+					<?php
+				} else {
+					?>
+						<p class="site-title">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<?php bloginfo( 'name' ); ?>
+							</a>
+						</p>
+					<?php
+				}
+			?>
 
 			<!-- Navigation -->
 			<nav
