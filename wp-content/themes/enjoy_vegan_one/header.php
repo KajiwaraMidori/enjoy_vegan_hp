@@ -37,13 +37,35 @@
 			<?php
 				if ( is_front_page() && is_home() ){
 					?>
-						<div class="site-title">
+						<div class="site-header-title">
 				      <img
-								class="map-japan"
+								class="site-header-map-japan"
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.png"
 								alt="click on a city to see it's restaurants!"
 							/>
-				      <div class="site-logo">
+							<div class="site-header-map-tokyo">
+								<a
+									href="<?php echo esc_url( home_url( '/' ));?>archives/tag/tokyo"
+									rel="search in Tokyo"
+									>
+									<img
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/h_tokyo_button.png"
+										alt="click here to search by hashtag!"
+										/>
+								</a>
+							</div>
+							<div class="site-header-map-kyoto">
+								<a
+									href="<?php echo esc_url( home_url( '/' ));?>archives/tag/kyoto"
+									rel="search in Kyoto"
+									>
+									<img
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/h_kyoto_button.png"
+										alt="click here to search by hashtag!"
+										/>
+								</a>
+							</div>
+				      <div class="site-header-logo">
 								<a
 									href="<?php echo esc_url( home_url( '/' ) );?>"
 									rel="home"
@@ -59,24 +81,24 @@
 									$description = get_bloginfo( 'description', 'display' );
 									if ( $description || is_customize_preview() ){
 										?>
-											<div class="site-description">
+											<div class="site-header-description">
 												<?php echo $description; /* WPCS: xss ok. */ ?>
 											</div>
 										<?php
 									}
 								?>
 							</div>
-							<div class="site-search">
+							<div class="site-header-search">
+								<div>
+									<img class="aligncenter"
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/click_search.png"
+										alt="click here to search by hashtag!"
+									/>
+								</div>
 								<a
 									href="<?php echo esc_url( home_url( '/' ) );?>"
 									rel="search by hashtag"
 									>
-									<div>
-										<img class="aligncenter"
-											src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/click_search.png"
-											alt="click here to search by hashtag!"
-										/>
-									</div>
 									<div>
 										<img
 											src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/search_hashtag_button.png"
@@ -89,7 +111,7 @@
 					<?php
 				} else {
 					?>
-						<p class="site-title">
+						<p class="site-header-title">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<?php bloginfo( 'name' ); ?>
 							</a>
