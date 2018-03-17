@@ -616,6 +616,14 @@ a:hover, a:active {
    margin: 0;
 }
 
+.site-footer {
+	padding-top: 80px;
+	padding-bottom: 30px;
+	background-color: #60C8D3;
+	font-family:"arial";
+	color: #FFFFFF;
+	text-align: center;
+}
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
