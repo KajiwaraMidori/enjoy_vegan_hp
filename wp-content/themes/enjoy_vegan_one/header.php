@@ -85,8 +85,6 @@
 									</div>
 								</a>
 							</div>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							</a>
 						</div>
 					<?php
 				} else {
