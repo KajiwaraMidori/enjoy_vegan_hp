@@ -66,6 +66,25 @@
 									}
 								?>
 							</div>
+							<div class="site-search">
+								<a
+									href="<?php echo esc_url( home_url( '/' ) );?>"
+									rel="search by hashtag"
+									>
+									<div>
+										<img class="aligncenter"
+											src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/click_search.png"
+											alt="click here to search by hashtag!"
+										/>
+									</div>
+									<div>
+										<img
+											src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/search_hashtag_button.png"
+											alt="click here to search by hashtag!"
+										/>
+									</div>
+								</a>
+							</div>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							</a>
 						</div>

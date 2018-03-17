@@ -621,6 +621,15 @@ a:hover, a:active {
 	color: #eee;
 	margin: 0 0 0 5%;
 }
+
+.site-search {
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
