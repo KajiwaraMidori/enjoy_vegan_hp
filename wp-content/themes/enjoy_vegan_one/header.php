@@ -45,7 +45,7 @@
 							/>
 							<div class="site-header-map-tokyo">
 								<a
-									href="<?php echo esc_url( home_url( '/' ));?>archives/tag/tokyo"
+									href="<?php echo esc_url( home_url( '/' ));?>index.php/category/tokyo"
 									rel="search in Tokyo"
 									>
 									<img
@@ -56,7 +56,7 @@
 							</div>
 							<div class="site-header-map-kyoto">
 								<a
-									href="<?php echo esc_url( home_url( '/' ));?>archives/tag/kyoto"
+									href="<?php echo esc_url( home_url( '/' ));?>index.php/category/kyoto/"
 									rel="search in Kyoto"
 									>
 									<img
@@ -130,7 +130,7 @@
 					class="menu-toggle"
 					aria-controls="primary-menu"
 					aria-expanded="false"
-				>
+				  >
 					<?php esc_html_e( 'Menu', 'enjoy_vegan_one' ); ?>
 				</button>
 
