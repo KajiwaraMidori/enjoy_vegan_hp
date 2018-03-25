@@ -31,11 +31,11 @@
 		<div class="site-footer-facebook">
 			<a 
 				href="<?php echo esc_url( "https://www.facebook.com/enjoy.vegan.japan/" );?>"
+				target="_blank"
 				rel="facebook link"
 				>
 				<img
 					src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/fb_button.png"
-					target="_blank"
 					alt="jump to our faecebook account!"
 				/>
 			</a>
@@ -44,11 +44,11 @@
 		<div class="site-footer-instagram">
 			<a 
 				href="<?php echo esc_url( "https://www.instagram.com/enjoy.vegan.japan/" );?>"
+				target="_blank"
 				rel="instagram link"
 				>
 				<img
 					src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/insta_button.png"
-					target="_blank"
 					alt="jump to our instagram account!"
 				/>
 			</a>
@@ -57,11 +57,11 @@
 		<div class="site-footer-twitter">
 			<a 
 				href="<?php echo esc_url( "https://twitter.com/EnjoyVEGANJAPAN" );?>"
+				target="_blank"
 				rel="twitter link"
 				>
 				<img
 					src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/twitter_button.png"
-					target="_blank"
 					alt="jump to our twitter account!"
 				/>
 			</a>
