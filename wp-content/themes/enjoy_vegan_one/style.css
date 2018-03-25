@@ -650,21 +650,26 @@ a:hover, a:active {
 /* site-footer */
 .site-footer {
 	padding-bottom: 30px;
-	background-color: #60C8D3;
+	background-color: #515151;
 	color: #FFFFFF;
 	text-align: center;
 }
 
 .site-footer-disclaimer {
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-bottom:5px;
 	font-family: "Arial";
-	background-color: #515151;
 }
 
 .site-footer-disclaimer-text {
 	padding-bottom: 20px;
 	font-family: "Arial";
+}
+
+.site-footer-SNS {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #60C8D3; 
 }
 
 .site-footer-facebook {
@@ -689,8 +694,7 @@ a:hover, a:active {
 }
 
 .site-footer-copyright {
-	padding-top: 40px;
-	padding-bottom: 5px;
+	padding-top: 30px;
 	font-family:"arial";
 }
 
