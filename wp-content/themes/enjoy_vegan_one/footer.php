@@ -69,7 +69,7 @@
 
 		<div class="site-footer-email">
 			<a 
-				href="mailto: enjoy.vegan.japan@gmail.com"
+				href="mailto: enjoy.vegan.japan@gmail.com?subject=[Contact Enjoy VEGAN JAPAN via Website]&amp;body=Thank you for contacting us!%0d%0aWe will reply to your message within a week.%0d%0a%0d%0aEnjoy VEGAN JAPAN Team"
 				rel="email link"
 				>
 				<img
