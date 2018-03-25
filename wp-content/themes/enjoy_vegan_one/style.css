@@ -647,13 +647,51 @@ a:hover, a:active {
 	margin: 0;
 }
 
+/* site-footer */
 .site-footer {
-	padding-top: 80px;
 	padding-bottom: 30px;
 	background-color: #60C8D3;
-	font-family:"arial";
 	color: #FFFFFF;
 	text-align: center;
+}
+
+.site-footer-disclaimer {
+	padding-top: 10px;
+	padding-bottom:5px;
+	font-family: "Arial";
+	background-color: #515151;
+}
+
+.site-footer-disclaimer-text {
+	padding-bottom: 20px;
+	font-family: "Arial";
+}
+
+.site-footer-facebook {
+ 	display: inline;
+  	padding-right: 70px;
+  	vertical-align: middle;
+}
+.site-footer-instagram {
+  	display: inline;
+    padding-right: 70px;
+  	vertical-align: middle;
+}
+
+.site-footer-twitter {
+	display: inline;
+    padding-right: 70px;
+	vertical-align: middle;
+}
+.site-footer-email {
+	display: inline;
+	vertical-align: middle;
+}
+
+.site-footer-copyright {
+	padding-top: 40px;
+	padding-bottom: 5px;
+	font-family:"arial";
 }
 
 /*--------------------------------------------------------------
