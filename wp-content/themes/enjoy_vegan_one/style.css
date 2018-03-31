@@ -611,7 +611,7 @@ a:hover, a:active {
 	position:absolute;
 	top: 60%;
 	left: 70%;
-	width: 100%;
+	width: auto;
 	margin: 0;
 }
 
@@ -619,7 +619,7 @@ a:hover, a:active {
 	position:absolute;
 	top: 65%;
 	left: 50%;
-	width: 100%;
+	width: auto;
 	margin: 0;
 }
 
@@ -669,7 +669,7 @@ a:hover, a:active {
 .site-footer-SNS {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background-color: #60C8D3; 
+	background-color: #60C8D3;
 }
 
 .site-footer-facebook {
