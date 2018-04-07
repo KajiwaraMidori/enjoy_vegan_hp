@@ -660,39 +660,45 @@ a:hover, a:active {
 }
 
 /* site-subcontents */
-.site-subcontents {
-	text-align: center;
+.site-subcontents-icon {
+	padding-top: 30px;
+	display:inline-block;
 }
 
 .site-subcontents-ourstory {
-	text-align: center;
 	width: 800px;
+	padding-top: 30px;
+	display:inline-block;
 }
 
 .site-subcontents-orderimg {
 	width: 30%;
 	height: 30%;
-	vertical-align: middle;
+	padding-top: 30px;
+	display:inline-block;
 }
 
 .site-subcontents-combinis {
 	width: 14%;
 	height: 14%;
-	vertical-align: middle;
+	padding-top: 30px;
+	display:inline-block;
 }
 
 
 .site-subcontents-combinis2 {
 	width: 16%;
 	height: 16%;
-	text-align: center;
+	padding-top: 30px;
+	display:inline-block;
 }
 
 .site-subcontents-ingredients {
 	display: inline;
 	width: 20%;
 	height: 20%;
-	vertical-align: middle;
+	padding-top: 30px;
+	display:inline-block;
 }
 
 /* site-footer */
