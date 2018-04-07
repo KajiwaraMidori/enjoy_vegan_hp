@@ -647,6 +647,14 @@ a:hover, a:active {
 	margin: 0;
 }
 
+.site-main {
+  display: flex; /* or inline-flex */
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+
 /* site-footer */
 .site-footer {
 	padding-bottom: 30px;

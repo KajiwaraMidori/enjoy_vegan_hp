@@ -25,28 +25,36 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'enjoy_vegan_one' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'enjoy_vegan_one' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				// TODO: add hashtag icon and styling here.
+				// <imgsrc="/images/1_header/h_tokyo_button.png"alt=""/>' etcetc
+				printf(
+					'<span class="tags-links">' .
+					esc_html__( 'Tagged %1$s', 'enjoy_vegan_one' ) .
+					'</span>',
+					$tags_list
+				); // WPCS: XSS OK.
 			}
 		}
 
-		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
-			comments_popup_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'enjoy_vegan_one' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				)
-			);
-			echo '</span>';
-		}
+		// NOTE: remove commenting for now.
+		// if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		// 	echo '<span class="comments-link">';
+		// 	comments_popup_link(
+		// 		sprintf(
+		// 			wp_kses(
+		// 				/* translators: %s: post title */
+		// 				__( 'Leave a Comment<span class="screen-reader-text"> on %s</span> ', 'enjoy_vegan_one' ),
+		// 				array(
+		// 					'span' => array(
+		// 						'class' => array(),
+		// 					),
+		// 				)
+		// 			),
+		// 			get_the_title()
+		// 		)
+		// 	);
+		// 	echo '</span>';
+		// }
 
 		edit_post_link(
 			sprintf(
