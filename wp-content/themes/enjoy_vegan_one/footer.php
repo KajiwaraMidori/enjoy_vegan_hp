@@ -20,17 +20,15 @@
 			</h5>
 
 			<div class="site-footer-disclaimer-text">
-				The information that we presents here is given to the best of our knowledge 
-				<br>
-				but we cannot guarantee the accuracy of the provided information. 
-				<br>
+				The information that we present here is given to the best of our knowledge, <br>
+				but we cannot guarantee the accuracy of the provided information. <br>
 				Please try your best to confirm yourself that what you consume meets your requirements.
 			</div><!-- .site-footer-disclaimer-text -->
 		</div><!-- .site-footer-disclaimer -->
 
 		<div class="site-footer-SNS">
-			<div class="site-footer-facebook">
-				<a 
+			<div class="site-footer-SNS-icon">
+				<a
 					href="<?php echo esc_url( "https://www.facebook.com/enjoy.vegan.japan/" );?>"
 					target="_blank"
 					rel="facebook link"
@@ -40,10 +38,10 @@
 						alt="jump to our faecebook account!"
 					/>
 				</a>
-			</div><!-- .site-footer-facebook -->
+			</div>
 
-			<div class="site-footer-instagram">
-				<a 
+			<div class="site-footer-SNS-icon">
+				<a
 					href="<?php echo esc_url( "https://www.instagram.com/enjoy.vegan.japan/" );?>"
 					target="_blank"
 					rel="instagram link"
@@ -53,10 +51,10 @@
 						alt="jump to our instagram account!"
 					/>
 				</a>
-			</div><!-- .site-footer-instagram -->
+			</div>
 
-			<div class="site-footer-twitter">
-				<a 
+			<div class="site-footer-SNS-icon">
+				<a
 					href="<?php echo esc_url( "https://twitter.com/EnjoyVEGANJAPAN" );?>"
 					target="_blank"
 					rel="twitter link"
@@ -66,10 +64,10 @@
 						alt="jump to our twitter account!"
 					/>
 				</a>
-			</div><!-- .site-footer-twitter -->
+			</div>
 
 			<div class="site-footer-email">
-				<a 
+				<a
 					href="mailto: enjoy.vegan.japan@gmail.com?subject=[Contact Enjoy VEGAN JAPAN via Website]&amp;body=Thank you for contacting us!%0d%0aWe will reply to your message within a week.%0d%0a%0d%0aEnjoy VEGAN JAPAN Team"
 					rel="email link"
 					>
@@ -85,7 +83,7 @@
 				Copyright &#9426 2018 <?php bloginfo('name'); ?> All Rights Reserved.
 			</div><!-- .site-footer-copyright -->
 		</div><!-- .site-footer-SNS -->
-			
+
 	</footer><!-- #colophon -->
 	</div><!-- #page -->
 

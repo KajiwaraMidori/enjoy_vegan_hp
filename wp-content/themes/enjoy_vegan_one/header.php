@@ -16,7 +16,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,700"
+		rel="stylesheet"
+	>
 	<link
 		rel="stylesheet"
 		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -45,7 +48,7 @@
 							/>
 							<div class="site-header-map-tokyo">
 								<a
-									href="<?php echo esc_url( home_url( '/' ));?>archives/tag/tokyo"
+									href="<?php echo esc_url(get_category_link( get_cat_ID( "tokyo" ))); ?>"
 									rel="search in Tokyo"
 									>
 									<img
@@ -56,7 +59,7 @@
 							</div>
 							<div class="site-header-map-kyoto">
 								<a
-									href="<?php echo esc_url( home_url( '/' ));?>archives/tag/kyoto"
+									href="<?php echo esc_url(get_category_link( get_cat_ID( "kyoto" ))); ?>"
 									rel="search in Kyoto"
 									>
 									<img
@@ -130,7 +133,7 @@
 					class="menu-toggle"
 					aria-controls="primary-menu"
 					aria-expanded="false"
-				>
+				  >
 					<?php esc_html_e( 'Menu', 'enjoy_vegan_one' ); ?>
 				</button>
 
