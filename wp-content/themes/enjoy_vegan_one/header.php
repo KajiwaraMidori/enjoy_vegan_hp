@@ -45,7 +45,11 @@
 							/>
 							<div class="site-header-map-tokyo">
 								<a
+<<<<<<< Updated upstream
 									href="<?php echo esc_url( home_url( '/' ));?>index.php/category/tokyo"
+=======
+									href="<?php echo esc_url(get_category_link( get_cat_ID( "tokyo" ))); ?>"
+>>>>>>> Stashed changes
 									rel="search in Tokyo"
 									>
 									<img
@@ -56,7 +60,11 @@
 							</div>
 							<div class="site-header-map-kyoto">
 								<a
+<<<<<<< Updated upstream
 									href="<?php echo esc_url( home_url( '/' ));?>index.php/category/kyoto/"
+=======
+									href="<?php echo esc_url(get_category_link( get_cat_ID( "kyoto" ))); ?>"
+>>>>>>> Stashed changes
 									rel="search in Kyoto"
 									>
 									<img
