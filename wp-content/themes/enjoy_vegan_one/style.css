@@ -598,6 +598,10 @@ a:hover, a:active {
 ## Structure
 --------------------------------------------------------------*/
 
+.site-header {
+	font-weight: 700;
+}
+
 .site-header-title {
 	display: block;
 	position: relative;
@@ -611,7 +615,7 @@ a:hover, a:active {
 	position:absolute;
 	top: 60%;
 	left: 70%;
-	width: 100%;
+	width: auto;
 	margin: 0;
 }
 
@@ -619,7 +623,7 @@ a:hover, a:active {
 	position:absolute;
 	top: 65%;
 	left: 50%;
-	width: 100%;
+	width: auto;
 	margin: 0;
 }
 
@@ -647,6 +651,53 @@ a:hover, a:active {
 	margin: 0;
 }
 
+.site-main {
+  display: flex; /* or inline-flex */
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+/* site-footer */
+.site-footer {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding-bottom: 30px;
+	background-color: #515151;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.site-footer-disclaimer {
+	padding-top: 20px;
+	padding-bottom:5px;
+}
+
+.site-footer-disclaimer-text {
+	padding-bottom: 20px;
+}
+
+.site-footer-SNS {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #60C8D3;
+}
+
+.site-footer-SNS-icon {
+ 	  display: inline;
+  	padding-right: 70px;
+  	vertical-align: middle;
+}
+
+.site-footer-email {
+	display: inline;
+	vertical-align: middle;
+}
+
+.site-footer-copyright {
+	padding-top: 30px;
+}
 
 /*--------------------------------------------------------------
 # Accessibility
