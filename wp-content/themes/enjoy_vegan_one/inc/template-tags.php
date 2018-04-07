@@ -13,12 +13,40 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 	 */
 	function enjoy_vegan_one_entry_footer() {
 		// Hide category and tag text for pages.
+		if (!function_exists('pin_icon')){
+			function pin_icon() {
+				?>
+					<img
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/marker_mm_20_green.png"
+							alt=""
+							/>
+				<?php
+			}
+		}
+		if (!function_exists('hash_icon')){
+			function hash_icon() {
+				?>
+					<img
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_b.png"
+							alt=""
+							/>
+				<?php
+			}
+		}
+		// function tag_icon() {
+		//
+		// }
+
 		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( esc_html__( ', ', 'enjoy_vegan_one' ) );
 			if ( $categories_list ) {
-				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'enjoy_vegan_one' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf(
+					'<span class="cat-links">' .
+					pin_icon() .
+					esc_html__( ' %1$s', 'enjoy_vegan_one' ) .
+					' </span>',
+					$categories_list
+				); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
@@ -29,8 +57,9 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 				// <imgsrc="/images/1_header/h_tokyo_button.png"alt=""/>' etcetc
 				printf(
 					'<span class="tags-links">' .
-					esc_html__( 'Tagged %1$s', 'enjoy_vegan_one' ) .
-					'</span>',
+					hash_icon() .
+					esc_html__( ' %1$s', 'enjoy_vegan_one' ) .
+					' </span>',
 					$tags_list
 				); // WPCS: XSS OK.
 			}
@@ -60,7 +89,7 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'enjoy_vegan_one' ),
+					__( '(edit) <span class="screen-reader-text">%s</span>', 'enjoy_vegan_one' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -78,7 +107,6 @@ endif;
 if ( ! function_exists( 'enjoy_vegan_one_post_thumbnail' ) ) :
 /**
  * Displays an optional post thumbnail.
- *
  * Wraps the post thumbnail in an anchor element on index views, or a div
  * element when on single views.
  */
