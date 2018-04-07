@@ -655,6 +655,42 @@ a:hover, a:active {
 	justify-content: center;
 }
 
+/* site-subcontents */
+.site-subcontents {
+	text-align: center;
+}
+
+.site-subcontents-ourstory {
+	text-align: center;
+	width: 800px;
+}
+
+.site-subcontents-orderimg {
+	width: 30%;
+	height: 30%;
+	vertical-align: middle;
+}
+
+.site-subcontents-combinis {
+	width: 14%;
+	height: 14%;
+	vertical-align: middle;
+}
+
+
+.site-subcontents-combinis2 {
+	width: 16%;
+	height: 16%;
+	text-align: center;
+}
+
+.site-subcontents-ingredients {
+	display: inline;
+	width: 20%;
+	height: 20%;
+	vertical-align: middle;
+}
+
 /* site-footer */
 .site-footer {
 	padding-bottom: 30px;
