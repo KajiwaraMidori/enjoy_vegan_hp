@@ -19,7 +19,7 @@
 			DISCLAIMER
 			</h5>
 
-			<div class="site-footer-disclaimer-text">
+			<div class="site-footer-disclaimer-text aligncenter">
 				The information that we present here is given to the best of our knowledge, <br>
 				but we cannot guarantee the accuracy of the provided information. <br>
 				Please try your best to confirm yourself that what you consume meets your requirements.
@@ -79,7 +79,7 @@
 				</a>
 			</div><!-- .site-footer-email -->
 
-			<div class="site-footer-copyright">
+			<div class="site-footer-copyright aligncenter">
 				Copyright &#9426 2018 <?php bloginfo('name'); ?> All Rights Reserved.
 			</div><!-- .site-footer-copyright -->
 		</div><!-- .site-footer-SNS -->
