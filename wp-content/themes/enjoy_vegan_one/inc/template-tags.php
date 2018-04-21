@@ -17,7 +17,7 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 			function pin_icon() {
 				?>
 					<img
-							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/marker_mm_20_green.png"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/marker_m.png"
 							alt=""
 							/>
 				<?php
@@ -27,7 +27,7 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 			function hash_icon() {
 				?>
 					<img
-							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_b.png"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_m.png"
 							alt=""
 							/>
 				<?php
