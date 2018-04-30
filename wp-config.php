@@ -18,12 +18,6 @@
  * @package WordPress
  */
 
-// 注意:
-// Windows の "メモ帳" でこのファイルを編集しないでください !
-// 問題なく使えるテキストエディタ
-// (http://wpdocs.osdn.jp/%E7%94%A8%E8%AA%9E%E9%9B%86#.E3.83.86.E3.82.AD.E3.82.B9.E3.83.88.E3.82.A8.E3.83.87.E3.82.A3.E3.82.BF 参照)
-// を使用し、必ず UTF-8 の BOM なし (UTF-8N) で保存してください。
-
 $LOCAL_DATABASE_URL = "mysql://wp_vegan_server:09876@127.0.0.1/wp_vegan_db";
 // ** MySQL settings - You can get this info from your web host ** //
 $url = parse_url(getenv('CLEARDB_DATABASE_URL') ? getenv('CLEARDB_DATABASE_URL') : $LOCAL_DATABASE_URL);

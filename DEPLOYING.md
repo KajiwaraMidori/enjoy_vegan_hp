@@ -16,7 +16,9 @@
 
 ## Troubleshooting
 - In order to reset your installation of wordpress:
-  - Find the envvar `CLEARDB_DATABASE_URL` in the [heroku dashboard](https://dashboard.heroku.com).
+  - Find the envvar `CLEARDB_DATABASE_URL` in the [heroku dashboard](https://dashboard.heroku.com).  
+    (or `heroku run bash` and
+    `php -r 'echo print_r(parse_url(getenv('CLEARDB_DATABASE_URL')));'`)
   - bash `mysql --user {user} --password={pw} -h {host} -D {database}` based on envvar.
   - DROP all TABLES with this command:  
     `DROP TABLE IF EXISTS wp_commentmeta, wp_comments, wp_links, wp_options, wp_postmeta, wp_posts, wp_term_relationships, wp_term_taxonomy, wp_termmeta, wp_terms, wp_usermeta, wp_users;`
