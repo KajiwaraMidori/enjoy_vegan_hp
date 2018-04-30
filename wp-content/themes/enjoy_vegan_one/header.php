@@ -53,7 +53,7 @@
 									>
 									<img
 										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/h_tokyo_button.png"
-										alt="click here to search by hashtag!"
+										alt=""
 										/>
 								</a>
 							</div>
@@ -64,7 +64,7 @@
 									>
 									<img
 										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/h_kyoto_button.png"
-										alt="click here to search by hashtag!"
+										alt=""
 										/>
 								</a>
 							</div>
