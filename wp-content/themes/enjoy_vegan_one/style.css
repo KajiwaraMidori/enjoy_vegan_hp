@@ -613,26 +613,37 @@ a:hover, a:active {
 	width: 100%;
 }
 
-.site-header-map-tokyo {
+.site-header-map-city {
 	position:absolute;
-	top: 60%;
-	left: 70%;
 	width: auto;
 	margin: 0;
 }
 
+.site-header-map-tokyo {
+	top: 60%;
+	left: 70%;
+}
+
 .site-header-map-kyoto {
-	position:absolute;
 	top: 65%;
 	left: 50%;
-	width: auto;
-	margin: 0;
+}
+
+.site-header-map-tag {
+	width: 25px;
+}
+
+.site-header-map-city-text {
+	color: #eee;
+	font-size: 1.5rem;
+	text-shadow:
+		1px 1px 1px #111;
 }
 
 .site-header-logo {
    position: absolute;
    top: 10%;
-   left: 10%;
+   left: 7%;
    width: 50%;
    height: 50%;
    margin: 0;
@@ -641,15 +652,15 @@ a:hover, a:active {
 .site-header-description {
 	font-size: 1.2rem;
 	color: #eee;
-	margin: 0 0 0 5%;
+	margin: 2% 0 0 5%;
 }
 
 .site-header-search {
 	position: absolute;
 	bottom: 10%;
 	right: 5%;
-	width: auto;
-	height: auto;
+	width: 15%;
+	height: 15%;
 	margin: 0;
 }
 

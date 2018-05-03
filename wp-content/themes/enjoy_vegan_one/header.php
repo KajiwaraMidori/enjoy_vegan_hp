@@ -43,32 +43,34 @@
 						<div class="site-header-title">
 				      <img
 								class="site-header-map-japan"
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.png"
+								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.svg"
 								alt="click on a city to see it's restaurants!"
 							/>
-							<div class="site-header-map-tokyo">
+							<div class="site-header-map-city site-header-map-tokyo">
 								<a
 									href="<?php echo esc_url(get_category_link( get_cat_ID( "tokyo" ))); ?>"
 									rel="search in Tokyo"
 									>
 									<img
-										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/h_tokyo_button.png"
-										alt=""
-										/>
+										class="site-header-map-tag"
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_m.svg"
+									/>
+									<label class="site-header-map-city-text">Tokyo</label>
 								</a>
 							</div>
-							<div class="site-header-map-kyoto">
+							<div class="site-header-map-city site-header-map-kyoto">
 								<a
 									href="<?php echo esc_url(get_category_link( get_cat_ID( "kyoto" ))); ?>"
 									rel="search in Kyoto"
 									>
 									<img
-										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/h_kyoto_button.png"
-										alt=""
-										/>
+										class="site-header-map-tag"
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_m.svg"
+									/>
+									<label class="site-header-map-city-text">Kyoto</label>
 								</a>
 							</div>
-				      <div class="site-header-logo">
+				      <h1 class="site-header-logo">
 								<a
 									href="<?php echo esc_url( home_url( '/' ) );?>"
 									rel="home"
@@ -76,7 +78,7 @@
 									<!-- <?php the_custom_logo(); ?> -->
 									<!-- <?php bloginfo( 'name' ); ?> -->
 									<img
-										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.png"
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.svg"
 										alt="Enjoy Vegan Japan logo"
 									/>
 								</a>
@@ -90,11 +92,11 @@
 										<?php
 									}
 								?>
-							</div>
+							</h1>
 							<div class="site-header-search">
 								<div>
 									<img class="aligncenter"
-										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/click_search.png"
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/click_search.svg"
 										alt="click here to search by hashtag!"
 									/>
 								</div>
@@ -104,7 +106,7 @@
 									>
 									<div>
 										<img
-											src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/search_hashtag_button.png"
+											src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/search_hashtag_button.svg"
 											alt="click here to search by hashtag!"
 										/>
 									</div>
@@ -114,11 +116,11 @@
 					<?php
 				} else {
 					?>
-						<p class="site-header-title">
+						<h1 class="site-header-title">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<?php bloginfo( 'name' ); ?>
 							</a>
-						</p>
+						</h1>
 					<?php
 				}
 			?>
