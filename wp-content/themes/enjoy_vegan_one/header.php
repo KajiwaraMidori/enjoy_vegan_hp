@@ -53,7 +53,7 @@
 									>
 									<img
 										class="site-header-map-tag"
-										src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_m.svg"
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/hashtag_s.svg"
 									/>
 									<label class="site-header-map-city-text">Tokyo</label>
 								</a>
@@ -65,7 +65,7 @@
 									>
 									<img
 										class="site-header-map-tag"
-										src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_m.svg"
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/hashtag_s.svg"
 									/>
 									<label class="site-header-map-city-text">Kyoto</label>
 								</a>
