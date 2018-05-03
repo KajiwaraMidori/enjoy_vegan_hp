@@ -277,8 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-	margin-bottom: 1.2em;
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 dfn, cite, em, i {
@@ -684,8 +683,44 @@ a:hover, a:active {
 }
 
 .site-subcontents-combinis {
+	padding: 30px;
+	display: block;
+}
+
+
+.site-subcontents-combinisitem_food {
+	display: inline-block;
+	width:auto;
+	padding-bottom: 60px;
+}
+
+.site-subcontents-combinisitem_food1 {
+	display: flex;
+	justify-content: center;
+	width: auto
+	margin: auto;
+}
+
+.site-subcontents-combinisitem_item {
+	display: block;
+	width: 200px;
+}
+
+.site-subcontents-combinisitem_img {
 	padding-top: 30px;
 	display: block;
+	height: 180px;
+}
+
+.site-subcontents-combinisitem_eng {
+	padding-top: 5px;
+	display: block;
+	width:200px;
+}
+
+.site-subcontents-combinisitem_jpn {
+	display: block;
+	width :200px;
 }
 
 .site-subcontents-ingredients {
