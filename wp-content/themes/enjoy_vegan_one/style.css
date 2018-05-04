@@ -611,6 +611,7 @@ a:hover, a:active {
 
 .site-header-map-japan {
 	width: 100%;
+	/* TODO: collapse map if eidth is less than 480px. */
 }
 
 .site-header-map-city {
@@ -650,9 +651,10 @@ a:hover, a:active {
 }
 
 .site-header-description {
-	font-size: 1.2rem;
+	font-size: 2rem;
 	color: #eee;
-	margin: 2% 0 0 5%;
+	text-align: left;
+	margin: 2% 0 0 0;
 }
 
 .site-header-search {
