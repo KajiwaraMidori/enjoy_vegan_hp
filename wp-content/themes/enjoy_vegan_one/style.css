@@ -653,6 +653,7 @@ a:hover, a:active {
 }
 
 .site-main {
+	background-color: #eaeef1;
   display: flex; /* or inline-flex */
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -678,7 +679,7 @@ a:hover, a:active {
 
 .site-subcontents-orderimg {
 	width: 100%;
-	padding-bottom: 30px; 
+	padding-bottom: 30px;
 	margin:10px auto;
 }
 
@@ -756,7 +757,7 @@ a:hover, a:active {
 
 .site-footer-disclaimer-text {
 	padding-top: 5px;
-	padding-bottom: 30px;	
+	padding-bottom: 30px;
 	line-height: 1.8em;
 	width: 85%;
 }
