@@ -23,6 +23,8 @@ get_header(); ?>
 						<?php
 					}
 
+					// TODO: count number of posts, switch to `show more...` if array longer than 9
+
 					/* Start the Loop */
 					while ( have_posts() ){
 						the_post();
@@ -45,7 +47,7 @@ get_header(); ?>
 			?>
 		</main><!-- #main -->
 
-		
+
 		<div class="site-subcontents">
 			<div class="site-subcontents-icon">
 				<img
@@ -75,7 +77,7 @@ get_header(); ?>
 			</p><!-- .subcontents-text -->
 			<div class="site-subcontents-orderimg"><!-- .subcontents-orderveganfood -->
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_img2.png"				
+					src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_img2.png"
 					alt="How to order vegan food" width="400" height="400"
 				/>
 				<img
