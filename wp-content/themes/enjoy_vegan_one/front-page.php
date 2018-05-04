@@ -100,81 +100,81 @@ get_header(); ?>
 				/>
 			</div><!-- .site-subcontents-combinis-food -->
 
-			<div class="site-subcontents-combinisitem_food">
-				<div class="site-subcontents-combinisitem_food1">
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+			<div class="site-subcontents-combini-food">
+				<div class="site-subcontents-combini-food1">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/ume.svg"
-								alt="plum onigiri" width="130" height="130"
+								alt="plum onigiri" width="126" height="121"
 							/>
 						</div><!-- plum onigiri -->
-						<div class="site-subcontents-combinisitem_eng">
-							<p class="aligncener">plum onigiri</p>
+						<div class="site-subcontents-combini-eng">
+							<p class="aligncenter">plum onigiri</p>
 						</div><!-- plum onigiri -->
-						<div class="site-subcontents-combinisitem_jpn">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">梅おにぎり（紀州南高梅）</p>
 						</div><!-- plum onigiri -->
 					</div><!-- plum onigiri -->
 
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/edamame.svg"
-								alt="edamame" width="100" height="100"
+								alt="edamame" width="100" height="117"
 							/>
 						</div><!-- edamame -->
-						<div class="site-subcontents-combinisitem_eng alignleft">
+						<div class="site-subcontents-combini-eng">
 							<p class="aligncenter">edamame/green soybeans</p>
 						</div><!-- edamame -->
-						<div class="site-subcontents-combinisitem_jpn alignleft">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">枝豆</p>
 						</div><!-- edamame -->
 					</div><!-- edamame -->
 
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/inari.svg"
-								alt="sushi wrapped with deep-fried bean curd" width="190" height="190"
+								alt="sushi wrapped with deep-fried bean curd" width="180" height="180"
 							/>
 						</div><!-- inari sushi -->
-						<div class="site-subcontents-combinisitem_eng alignleft">
+						<div class="site-subcontents-combini-eng">
 							<p class="aligncenter">sushi wrapped with<br> deep-fried bean curd</p>
 						</div><!-- inari sushi -->
-						<div class="site-subcontents-combinisitem_jpn alignleft">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">いなり寿司</p>
 						</div><!-- inari sushi -->
 					</div><!-- inaris sushi  -->
 				</div><!-- food line 1 -->
 
-				<div class="site-subcontents-combinisitem_food1">
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+				<div class="site-subcontents-combini-food1">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/onigiri.svg"
-								alt="salted onigiri" width="140" height="140"
+								alt="salted onigiri" width="138" height="128"
 							/>
 						</div><!-- onigiri -->
-						<div class="site-subcontents-combinisitem_eng alignleft">
+						<div class="site-subcontents-combini-eng">
 							<p class="aligncenter">salted onigiri</p>
 						</div><!-- onigiri -->
-						<div class="site-subcontents-combinisitem_jpn alignleft">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">塩むすび</p>
 						</div><!-- onigiri -->
 					</div><!-- onigiri -->
 
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/sekihan.svg"
-								alt="salted onigiri" width="150" height="150"
+								alt="salted onigiri" width="140" height="130"
 							/>
 						</div><!-- sekihan -->
-						<div class="site-subcontents-combinisitem_eng alignleft">
+						<div class="site-subcontents-combini-eng">
 							<p class="aligncenter">glutinous rice and <br>red beans onigiri</p>
 						</div><!-- sekihan -->
-						<div class="site-subcontents-combinisitem_jpn alignleft">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">赤飯おこわ</p>
 						</div><!-- sekihan -->
 					</div><!-- sekihan -->
@@ -188,95 +188,95 @@ get_header(); ?>
 				/>
 			</div><!-- .site-subcontents-combinis-sweets -->
 
-			<div class="site-subcontents-combinisitem_food">
-				<div class="site-subcontents-combinisitem_food1">
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+			<div class="site-subcontents-combini-food">
+				<div class="site-subcontents-combini-food1">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/anmitsu.png"
 								alt="assortd beans, agar jelly and fruits in syrup" width="150" height="150"
 							/>
 						</div><!-- anmitsu -->
-						<div class="site-subcontents-combinisitem_eng">
+						<div class="site-subcontents-combini-eng">
 							<p class="aligncener">assorted beans, agar jelly<br>and fruits in syrup</p>
 						</div><!-- anmitsu -->
-						<div class="site-subcontents-combinisitem_jpn">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">あんみつ</p>
 						</div><!-- anmitsu -->
 					</div><!-- anmitsu -->
 
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/amaguri.svg"
-								alt="sweet roasted chestnuts" width="160" height="160"
+								alt="sweet roasted chestnuts" width="160" height="125"
 							/>
 						</div><!-- amaguri -->
-						<div class="site-subcontents-combinisitem_eng alignleft">
+						<div class="site-subcontents-combini-eng">
 							<p class="aligncenter">sweet roaseted chestnuts</p>
 						</div><!-- amaguri -->
-						<div class="site-subcontents-combinisitem_jpn alignleft">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">甘栗</p>
 						</div><!-- amaguri -->
 					</div><!-- amaguri -->
 
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/mitarashi.svg"
-								alt="rice dumpling with sweet soy glaze" width="190" height="190"
+								alt="rice dumpling with sweet soy glaze" width="190" height="80"
 							/>
 						</div><!-- mitarashi -->
-						<div class="site-subcontents-combinisitem_eng alignleft">
+						<div class="site-subcontents-combini-eng">
 							<p class="aligncenter">rice dumpling with <br>sweet soy glaze</p>
 						</div><!-- mitarashi -->
-						<div class="site-subcontents-combinisitem_jpn alignleft">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">みたらし団子/串だんご（たれ）</p>
 						</div><!-- mitarashi -->
 					</div><!-- mitarashi -->
 				</div><!-- sweets line1 -->
 
-				<div class="site-subcontents-combinisitem_food1">
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+				<div class="site-subcontents-combini-food1">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/anko.svg"
 								alt="rice dumpling with sweet red beans paste" width="190" height="190"
 							/>
-						</div><!-- andango -->						<div class="site-subcontents-combinisitem_eng alignleft">
+						</div><!-- andango -->						<div class="site-subcontents-combini-eng">
 							<p class="aligncenter">rice dumpling with<br>sweet red beans paste</p>
 						</div><!-- andango -->
-						<div class="site-subcontents-combinisitem_jpn alignleft">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">串だんご（あん）</p>
 						</div><!-- andango -->
 					</div><!-- andango -->
 
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/jelly.png"
-								alt="agar jelly " width="190" height="190"
+								alt="agar jelly " width="190" height="125"
 							/>
 						</div><!-- jelly -->
-						<div class="site-subcontents-combinisitem_eng alignleft">
+						<div class="site-subcontents-combini-eng">
 							<p class="aligncenter">agar jelly</p>
 						</div><!-- jelly -->
-						<div class="site-subcontents-combinisitem_jpn alignleft">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">寒天ゼリー</p>
 						</div><!-- jelly -->
 					</div><!-- jelly -->
 
-					<div class="site-subcontents-combinisitem_item">
-						<div class="site-subcontents-combinisitem_img">
+					<div class="site-subcontents-combini-item">
+						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/youkan.svg"
 								alt="jellied sweet red beans paste " width="200" height="200"
 							/>
 						</div><!-- youkan -->
-						<div class="site-subcontents-combinisitem_eng alignleft">
+						<div class="site-subcontents-combini-eng">
 							<p class="aligncenter">jellied sweet red<br>beans pasete</p>
 						</div><!-- youkan -->
-						<div class="site-subcontents-combinisitem_jpn alignleft">
+						<div class="site-subcontents-combini-jpn">
 							<p class="aligncenter small">ようかん（小倉・練）</p>
 						</div><!-- youkan -->
 					</div><!-- youkan -->

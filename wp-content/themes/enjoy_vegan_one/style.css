@@ -688,39 +688,43 @@ a:hover, a:active {
 }
 
 
-.site-subcontents-combinisitem_food {
+.site-subcontents-combini-food {
 	display: inline-block;
 	width:auto;
 	padding-bottom: 60px;
 }
 
-.site-subcontents-combinisitem_food1 {
+.site-subcontents-combini-food1 {
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
-	width: auto
-	margin: auto;
+	align-content: center;
+	align-items: center;
 }
 
-.site-subcontents-combinisitem_item {
-	display: block;
-	width: 200px;
+.site-subcontents-combini-item {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 250px;
 }
 
-.site-subcontents-combinisitem_img {
-	padding-top: 30px;
+.site-subcontents-combini-img {
 	display: block;
-	height: 180px;
+	align-self: center;
 }
 
-.site-subcontents-combinisitem_eng {
-	padding-top: 5px;
-	display: block;
-	width:200px;
+.site-subcontents-combini-eng {
+	padding-top: 15px;
+	width:250px;
 }
 
-.site-subcontents-combinisitem_jpn {
-	display: block;
-	width :200px;
+.site-subcontents-combini-jpn {
+	width :250px;
+	padding-bottom: 20px;
+	font-family: "ヒラギノUD角ゴ Std";
 }
 
 .site-subcontents-ingredients {
