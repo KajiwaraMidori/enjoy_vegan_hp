@@ -671,10 +671,10 @@ a:hover, a:active {
 }
 
 .site-subcontents-text {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2em;
 	width: 70%;
 	line-height: 1.8em;
+	padding-top: 15px;
 }
 
 .site-subcontents-orderimg {
@@ -729,16 +729,58 @@ a:hover, a:active {
 }
 
 .site-subcontents-ingredients {
-
+	display: inline-block;
+	width:auto;
 }
-.site-subcontents-ingredients-label {
+.site-subcontents-ingredients1 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.site-subcontents-ingredients2 {
+	padding-bottom:60px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-content: space-between;
+	align-items: flex-start;
+}
+.site-subcontents-ingredients3 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.site-subcontents-ingredients4 {
+	display: inline-block;
+	padding-top: 10px;
+	width: 150px;
+}
+
+.site-subcontents-ingredients-eng {
+	font-size: 1.4em;	
+	line-height: 1em;
+}
+
+.site-subcontents-ingredients-jpn {
+	font-family: "ヒラギノ角ゴオールドStdN";
+	font-size: 1em;
+	line-height: 1.8em;
+}
+
+.site-subcontents-ingredients-jpn2 {
+	font-family: "ヒラギノ角ゴオールドStdN";
+	font-size: 0.7em;
+	line-height: 1.2em;
 
 }
 
 .site-subcontents-ingredients-warning {
 	width: 80%;
 	line-height: 1.8em;
-	padding-top: 30px;
 	padding-bottom: 30px;
 }
 

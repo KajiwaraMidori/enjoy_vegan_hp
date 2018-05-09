@@ -290,37 +290,222 @@ get_header(); ?>
 		<div class="site-subcontents">
 			<div class="site-subcontents-icon">
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/ingredients_icon.png"
+					src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/ingredients_icon.svg"
 					alt="Ingredients ENG/JPN dictionary" width="140" height="140"
 				/>
+				<p class="site-subcontents-text aligncenter">
+					Tired of looking up Japanese ingredients in Japanese to English dictonary?<br>Here we listed up major ingredients in both English & Japanese.
+				</p>
 			</div><!-- .subcontents-icon -->
 			<div class="site-subcontents-ingredients">
-				<div　class="site-subcontents-ingredients-label">
-					<img
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/meat_icon.png"
-						alt="Ingredients -MEAT-" width="310" height="310"
-					/>
-					<img
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/seafood_icon.png"
-						alt="Ingredients -SEAFOOD-" width="310" height="310"
-					/>
-				</div>
-				<div　class="site-subcontents-ingredients-label">
-					<img
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/dairy_icon.png"
-						alt="Ingredients -DAIRY PRODUCT-" width="310" height="310"
-					/>
-					<img
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/honey_icon.png"
-						alt="Ingredients -HONEY-" width="310" height="310"
-					/>
-				</div>
-				<div　class="site-subcontents-ingredients-label">
-					<img
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/vegan_icon.png"
-						alt="Ingredients -VEGAN-" width="310" height="310"
+				<div　class="site-subcontents-ingredients1">
+					<div class="site-subcontents-ingredients2">
+						<img
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/meat_icon.svg"
+							alt="Ingredients -MEAT-" width="310" height="310"
 						/>
-				</div>
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<img
+									src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/english_icon.svg"
+									alt="English" width="110" height="110"
+								/>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<img
+									src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/japanese_icon.svg"
+									alt="Japanese" width="133" height="133"
+								/>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-eng">
+									chicken
+								</div>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-jpn">
+									鶏肉/とり肉/チキン
+								</div>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-eng">
+									pork
+								</div>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-jpn">
+									豚肉/ぶた肉/ポーク
+								</div>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+					</div><!-- ingredients2 -->
+					<div class="site-subcontents-ingredients2">
+						<img
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/seafood_icon.svg"
+							alt="Ingredients -SEAFOOD-" width="310" height="310"
+						/>
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<img
+									src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/english_icon.svg"
+									alt="English" width="110" height="110"
+								/>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<img
+									src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/japanese_icon.svg"
+									alt="Japanese" width="133" height="133"
+								/>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-eng">
+									bonito broth
+								</div>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">			<div class="site-subcontents-ingredients-jpn2 aligncenter">
+									かつおだし/かつお出汁<br>/鰹だし/鰹出汁
+								</div>
+							</div><!-- ingredients4 -->	
+						</div><!-- ingredients3 -->
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-eng">
+									dried bonito shavings
+								</div>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-jpn2">
+									かつおぶし/かつお節/鰹節<br>/鰹ぶし/そうだだし/宗田節
+								</div>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+					</div><!-- ingredients2 -->					
+					<div class="site-subcontents-ingredients2">
+						<img
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/dairy_icon.svg"
+							alt="Ingredients -DAIRY PRODUCTS-" width="310" height="310"
+						/>
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<img
+									src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/english_icon.svg"
+									alt="English" width="110" height="110"
+								/>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<img
+									src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/japanese_icon.svg"
+									alt="Japanese" width="133" height="133"
+								/>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-eng">
+									mayonnaise
+								</div>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-jpn">
+									マヨネーズ
+								</div>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-eng">
+									butter
+								</div>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-jpn">
+									バター
+								</div>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+					</div><!-- ingredients2 -->
+					<div class="site-subcontents-ingredients2">
+						<img
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/honey_icon.svg"
+							alt="Ingredients -HONEY-" width="310" height="310"
+						/>
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<img
+									src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/english_icon.svg"
+									alt="English" width="110" height="110"
+								/>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<img
+									src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/japanese_icon.svg"
+									alt="Japanese" width="133" height="133"
+								/>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-eng">
+									honey
+								</div>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-jpn2">
+									はちみつ/蜂蜜/ハニー
+								</div>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+					</div><!-- ingredients2 -->
+					<div class="site-subcontents-ingredients2">
+						<img
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/vegan_icon.svg"
+							alt="Ingredients -VEGAN-" width="310" height="310"
+						/>
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<img
+									src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/english_icon.svg"
+									alt="English" width="110" height="110"
+								/>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<img
+									src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/japanese_icon.svg"
+									alt="Japanese" width="133" height="133"
+								/>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-eng">
+									wheat
+								</div>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-jpn">
+									小麦粉
+								</div>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+						<div class="site-subcontents-ingredients3">
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-eng">
+									soybean
+								</div>
+							</div><!-- ingredients4 -->
+							<div class="site-subcontents-ingredients4">
+								<div class="site-subcontents-ingredients-jpn">
+									大豆
+								</div>
+							</div><!-- ingredients4 -->
+						</div><!-- ingredients3 -->
+					</div><!-- ingredients2 -->
 			</div><!-- .site-subcontents-ingredients -->
 			<div class="site-subcontents-ingredients-warning aligncenter">
 				*These ingredients may not be vegan. <br>
