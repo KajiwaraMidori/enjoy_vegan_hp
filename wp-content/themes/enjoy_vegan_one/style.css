@@ -788,7 +788,7 @@ a:hover, a:active {
 /* site-footer */
 .site-footer {
 	font-weight: 400;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	background-color: #515151;
 	color: #FFFFFF;
 }
@@ -804,26 +804,37 @@ a:hover, a:active {
 	width: 85%;
 }
 
+
 .site-footer-SNS {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	background-color: #60C8D3;
 }
 
+.site-footer-SNS1 {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
 .site-footer-SNS-icon {
  	display: inline;
-  	padding-right: 70px;
+ 	padding-left: 35px;
+  	padding-right: 35px;
   	vertical-align: middle;
 }
 
 .site-footer-email {
 	display: inline;
+	padding-left: 35px;
+  	padding-right: 35px;
 	vertical-align: middle;
 }
 
 .site-footer-copyright {
-	padding-top: 30px;
-	width: 80%;
+	padding-top: 15px;
 }
 
 /*--------------------------------------------------------------
