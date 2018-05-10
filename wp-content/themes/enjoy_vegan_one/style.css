@@ -730,15 +730,16 @@ a:hover, a:active {
 }
 
 .site-subcontents-ingredients {
-	display: inline-block;
-	width:auto;
-}
-.site-subcontents-ingredients1 {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+	justify-content: space-around;
+	align-content: space-between;
+	align-items: flex-start;
+	width:70%;
+	margin: auto;
+}
+.site-subcontents-ingredients1 {
+
 }
 .site-subcontents-ingredients2 {
 	padding-bottom:60px;
@@ -756,7 +757,6 @@ a:hover, a:active {
 	align-items: center;
 }
 .site-subcontents-ingredients4 {
-	display: inline-block;
 	padding-top: 10px;
 	width: 150px;
 }
@@ -801,7 +801,6 @@ a:hover, a:active {
 	padding-top: 5px;
 	padding-bottom: 30px;
 	line-height: 1.8em;
-	width: 85%;
 }
 
 

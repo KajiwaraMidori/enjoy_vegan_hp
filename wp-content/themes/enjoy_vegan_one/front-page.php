@@ -314,7 +314,7 @@ get_header(); ?>
 			</p>
 
 			<div class="site-subcontents-ingredients">
-				<div　class="site-subcontents-ingredients1">
+				
 					<div class="site-subcontents-ingredients2">
 						<img
 							src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/meat_icon.svg"
@@ -401,7 +401,9 @@ get_header(); ?>
 								</div>
 							</div><!-- ingredients4 -->
 						</div><!-- ingredients3 -->
-					</div><!-- ingredients2 -->					
+					</div><!-- ingredients2 -->	
+				
+						
 					<div class="site-subcontents-ingredients2">
 						<img
 							src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/dairy_icon.svg"
@@ -478,6 +480,8 @@ get_header(); ?>
 							</div><!-- ingredients4 -->
 						</div><!-- ingredients3 -->
 					</div><!-- ingredients2 -->
+				
+				
 					<div class="site-subcontents-ingredients2">
 						<img
 							src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/vegan_icon.svg"
@@ -522,6 +526,7 @@ get_header(); ?>
 							</div><!-- ingredients4 -->
 						</div><!-- ingredients3 -->
 					</div><!-- ingredients2 -->
+			
 			</div><!-- .site-subcontents-ingredients -->
 			<div class="site-subcontents-ingredients-warning aligncenter">
 				*These ingredients may not be vegan. <br>
