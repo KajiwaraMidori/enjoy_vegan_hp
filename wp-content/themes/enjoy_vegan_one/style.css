@@ -670,12 +670,33 @@ a:hover, a:active {
 	padding-bottom: 20px;
 }
 
-.site-subcontents-text {
+.site-subcontents-story {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: flex-start;
+}
+
+.site-subcontents-text1 {
+	font-size: 1.2em;
+	width: 30%;
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 1.8em;
+	padding-top: 10px;
+	min-width: 320px;
+}
+
+.site-subcontents-text2 {
 	font-size: 1.2em;
 	width: 70%;
+	padding-right: 10px;
+	padding-left: 10px;
 	line-height: 1.8em;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	min-width: 320px;
 }
 
 .site-subcontents-orderimg {
@@ -729,7 +750,7 @@ a:hover, a:active {
 	font-family: "ヒラギノUD角ゴ Std";
 }
 
-.site-subcontents-ingredients {
+.site-subcontents-ingredients1 {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -738,9 +759,7 @@ a:hover, a:active {
 	width:70%;
 	margin: auto;
 }
-.site-subcontents-ingredients1 {
 
-}
 .site-subcontents-ingredients2 {
 	padding-bottom:60px;
 	display: flex;
