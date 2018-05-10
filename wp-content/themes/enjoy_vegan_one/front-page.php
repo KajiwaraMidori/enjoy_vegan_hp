@@ -51,7 +51,7 @@ get_header(); ?>
 		<div class="site-subcontents">
 			<div class="site-subcontents-icon">
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/2_ourstory/story_icon.png"
+					src="<?php echo esc_url( get_template_directory_uri() );?>/images/2_ourstory/story_icon.svg"
 					alt="our story icon" width="70" height="70"
 				/>
 			</div><!-- .site-subcontents-icon -->
@@ -68,7 +68,7 @@ get_header(); ?>
 		<div class="site-subcontents">
 			<div class="site-subcontents-icon">
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_icon.png"
+					src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_icon.svg"
 					alt="How to order vegan food" width="146" height="146"
 				/>
 			</div><!-- .site-subcontents-icon -->
@@ -81,7 +81,7 @@ get_header(); ?>
 					alt="How to order vegan food" width="400" height="400"
 				/>
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_img1.png"
+					src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_img1.svg"
 					alt="How to order vegan food" width="470" height="470"
 				/>
 			</div><!-- .site-subcontents-orderimg -->
@@ -138,7 +138,7 @@ get_header(); ?>
 						<div class="site-subcontents-combini-img">
 							<img
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/inari.svg"
-								alt="sushi wrapped with deep-fried bean curd" width="180" height="180"
+								alt="sushi wrapped with deep-fried bean curd" width="140" height="140"
 							/>
 						</div><!-- inari sushi -->
 						<div class="site-subcontents-combini-eng">

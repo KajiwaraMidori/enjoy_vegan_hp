@@ -34,8 +34,8 @@
 					rel="facebook link"
 					>
 					<img
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/fb_button.png"
-						alt="jump to our faecebook account!"
+						src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/fb_button.svg"
+						alt="jump to our faecebook account!" width="40" height="40"
 					/>
 				</a>
 			</div>
@@ -47,8 +47,8 @@
 					rel="instagram link"
 					>
 					<img
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/insta_button.png"
-						alt="jump to our instagram account!"
+						src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/insta_button.svg"
+						alt="jump to our instagram account!" width="40" height="40"
 					/>
 				</a>
 			</div>
@@ -60,8 +60,8 @@
 					rel="twitter link"
 					>
 					<img
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/twitter_button.png"
-						alt="jump to our twitter account!"
+						src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/twitter_button.svg"
+						alt="jump to our twitter account!" width="40" height="40"
 					/>
 				</a>
 			</div>
@@ -72,9 +72,9 @@
 					rel="email link"
 					>
 					<img
-						src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/mail_button.png"
+						src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/mail_button.svg"
 						target="_blank"
-						alt="send email to enjoy VEGAN JAPAN"
+						alt="send email to enjoy VEGAN JAPAN" width="40" height="40"
 					/>
 				</a>
 			</div><!-- .site-footer-email -->
