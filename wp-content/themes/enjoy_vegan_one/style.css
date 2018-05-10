@@ -667,14 +667,15 @@ a:hover, a:active {
 }
 
 .site-subcontents-icon {
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 
 .site-subcontents-text {
 	font-size: 1.2em;
 	width: 70%;
 	line-height: 1.8em;
-	padding-top: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .site-subcontents-orderimg {
@@ -684,7 +685,7 @@ a:hover, a:active {
 }
 
 .site-subcontents-combinis {
-	padding: 30px;
+	padding-bottom: 30px;
 	display: block;
 }
 
@@ -692,7 +693,7 @@ a:hover, a:active {
 .site-subcontents-combini-food {
 	display: inline-block;
 	width:auto;
-	padding-bottom: 60px;
+	padding-bottom: 10px;
 }
 
 .site-subcontents-combini-food1 {
@@ -749,7 +750,7 @@ a:hover, a:active {
 }
 .site-subcontents-ingredients3 {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 	align-content: center;
 	align-items: center;

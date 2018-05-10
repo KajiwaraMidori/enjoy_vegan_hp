@@ -55,12 +55,14 @@ get_header(); ?>
 					alt="our story icon" width="70" height="70"
 				/>
 			</div><!-- .site-subcontents-icon -->
+			<img
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/border.svg" width="338" height="328"
+			/>
 			<p class="site-subcontents-text aligncenter">
 				<!-- あとでborder導入 -->
 				With Tokyo Olympic and Paralympic Games being held in 2020, the number of foreign tourists visiting Japan are on the rise. Visitors with dietary restrictions are having a difficult time searching for food establishments that can accommodate their needs. <br><br> <!-- あとでCSSいじって1行空ける -->
 				We started Enjoy VEGAN JAPAN in an effort to connect vegan visitors with vegan-friendly eateries. There are so many wonderful vegan options in Japan, and we wanted to make sure that there was one website you could turn to, for reliable information and mouth-watering pictures. <br><br>　<!-- あとでCSSいじって1行空ける -->
 				We hope your stay in Japan is full of tasty vegan eats!<br>
-				<!-- あとでborder導入 -->
 			</p><!-- .site-subcontents-text -->
 		</div><!-- .site-subcontents -->
 
@@ -72,8 +74,11 @@ get_header(); ?>
 					alt="How to order vegan food" width="146" height="146"
 				/>
 			</div><!-- .site-subcontents-icon -->
+			<img
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/border.svg" width="338" height="328"
+			/>
 			<p class="site-subcontents-text aligncenter">
-				Please show this screen to the staff to tell your requirements.
+				Please show this screen to the staff to tell your requirements when you ask for vegan menus.
 			</p><!-- .subcontents-text -->
 			<div class="site-subcontents-orderimg">
 				<img
@@ -95,6 +100,13 @@ get_header(); ?>
 					alt="Vegan in Combinis" width="147" height="147"
 				/>
 			</div><!-- .site-subcontents-icon -->
+			<img
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/border.svg" width="338" height="328"
+			/>
+			<p class="site-subcontents-text aligncenter">
+				Enjoy shopping in combinis!<br>
+				There are some vegan items you can find in the store.
+			</p>
 			<div class="site-subcontents-combinis">
 				<img
 					src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/food_icon.svg"
@@ -293,10 +305,14 @@ get_header(); ?>
 					src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/ingredients_icon.svg"
 					alt="Ingredients ENG/JPN dictionary" width="140" height="140"
 				/>
-				<p class="site-subcontents-text aligncenter">
-					Tired of looking up Japanese ingredients in Japanese to English dictonary?<br>Here we listed up major ingredients in both English & Japanese.
-				</p>
 			</div><!-- .subcontents-icon -->
+			<img
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/border.svg" width="338" height="328"
+			/>
+			<p class="site-subcontents-text aligncenter">
+				Tired of looking up Japanese ingredients in Japanese to English dictonary?<br>Here we listed up major ingredients in both English & Japanese.
+			</p>
+
 			<div class="site-subcontents-ingredients">
 				<div　class="site-subcontents-ingredients1">
 					<div class="site-subcontents-ingredients2">
