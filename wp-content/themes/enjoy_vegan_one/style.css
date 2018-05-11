@@ -822,7 +822,6 @@ a:hover, a:active {
 	line-height: 1.8em;
 }
 
-
 .site-footer-SNS {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -832,23 +831,20 @@ a:hover, a:active {
 .site-footer-SNS1 {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-content: center;
 	align-items: center;
+	width: 40%;
+	margin: auto;
 }
 
 .site-footer-SNS-icon {
- 	display: inline;
- 	padding-left: 35px;
-  	padding-right: 35px;
-  	vertical-align: middle;
+	padding-right: 3px;
+	padding-left: 3px;
 }
 
 .site-footer-email {
-	display: inline;
-	padding-left: 35px;
-  	padding-right: 35px;
-	vertical-align: middle;
+	padding-left: 3px;	
 }
 
 .site-footer-copyright {
