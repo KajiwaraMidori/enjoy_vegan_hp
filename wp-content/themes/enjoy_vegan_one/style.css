@@ -785,6 +785,11 @@ a:hover, a:active {
 	line-height: 1em;
 }
 
+.site-subcontents-ingredients-eng2 {
+	font-size: 1.2em;	
+	line-height: 1em;
+}
+
 .site-subcontents-ingredients-jpn {
 	font-family: "ヒラギノ角ゴオールドStdN";
 	font-size: 1em;
@@ -849,7 +854,6 @@ a:hover, a:active {
 
 .site-footer-copyright {
 	padding-top: 15px;
-line-height: 1.8em;
 }
 
 /*--------------------------------------------------------------

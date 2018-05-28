@@ -364,6 +364,78 @@ get_header(); ?>
 							</div>
 						</div><!-- ingredients4 -->
 					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								beef
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								牛肉/ビーフ
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								chicken broth
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								チキンエキス
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								pork broth
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								ポークエキス
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								beef broth
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								ビーフエキス
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								consommé
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								コンソメ
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								gelatin
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								ゼラチン
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
 				</div><!-- ingredients2 -->
 				<div class="site-subcontents-ingredients2">
 					<img
@@ -398,13 +470,97 @@ get_header(); ?>
 					</div><!-- ingredients3 -->
 					<div class="site-subcontents-ingredients3">
 						<div class="site-subcontents-ingredients4">
-							<div class="site-subcontents-ingredients-eng">
+							<div class="site-subcontents-ingredients-eng2">
 								dried bonito shavings
 							</div>
 						</div><!-- ingredients4 -->
 						<div class="site-subcontents-ingredients4">
 							<div class="site-subcontents-ingredients-jpn2">
-								かつおぶし/かつお節/鰹節<br>/鰹ぶし/そうだだし/宗田節
+								かつおぶし/かつお節/鰹節<br>/鰹ぶし/そうだぶし/宗田節
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								dried small sardines
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								いわし煮干し
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng2">
+								dried mackerel shavings
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								さば削りぶし
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								scallop
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								ほたて/ホタテ/帆立
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								salmon
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								さけ/鮭
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								shrimp
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								えび/エビ/海老
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								clams
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								あさり/アサリ
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								fish sauce
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								魚醤
 							</div>
 						</div><!-- ingredients4 -->
 					</div><!-- ingredients3 -->
@@ -451,6 +607,42 @@ get_header(); ?>
 						<div class="site-subcontents-ingredients4">
 							<div class="site-subcontents-ingredients-jpn">
 								バター
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								milk
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								牛乳/乳/ミルク
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								cheese
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								チーズ
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								egg (quail egg)
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn2">
+								たまご/卵/玉子<br>(うずらの卵）
 							</div>
 						</div><!-- ingredients4 -->
 					</div><!-- ingredients3 -->
@@ -532,10 +724,106 @@ get_header(); ?>
 							</div>
 						</div><!-- ingredients4 -->
 					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								kelp broth
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								昆布だし/昆布出汁
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								agar/vegetable gelatin
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								寒天
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								peanuts
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								ピーナッツ
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								soy milk
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								豆乳
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								sugar (refined sugar)
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								砂糖/白砂糖 *
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								brown sugar
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								黒砂糖/黒糖
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								brown sugar syrup
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								黒蜜
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
+					<div class="site-subcontents-ingredients3">
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-eng">
+								emulsifier
+							</div>
+						</div><!-- ingredients4 -->
+						<div class="site-subcontents-ingredients4">
+							<div class="site-subcontents-ingredients-jpn">
+								乳化剤 *
+							</div>
+						</div><!-- ingredients4 -->
+					</div><!-- ingredients3 -->
 				</div><!-- ingredients2 -->
 			</div><!-- .site-subcontents-ingredients -->
 			<div class="site-subcontents-ingredients-warning aligncenter">
-				*These ingredients may not be vegan. <br>
+				* These ingredients may not be vegan. <br>
 				They may contain animal-derived ingredients or processed with bone char as part of the manufacturing process. <br>
 				To be sure, please inquire about these ingredients when you come across them.
 			</div><!--.site-subcontents-ingredients-warning -->
