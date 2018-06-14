@@ -277,8 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-	margin-bottom: 1.2em;
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 dfn, cite, em, i {
@@ -667,6 +666,7 @@ a:hover, a:active {
 }
 
 .site-main {
+	background-color: #eaeef1;
   display: flex; /* or inline-flex */
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -697,8 +697,48 @@ a:hover, a:active {
 }
 
 .site-subcontents-combinis {
-	padding-top: 30px;
+	padding: 30px;
 	display: block;
+}
+
+
+.site-subcontents-combini-food {
+	display: inline-block;
+	width:auto;
+	padding-bottom: 60px;
+}
+
+.site-subcontents-combini-food1 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.site-subcontents-combini-item {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 250px;
+}
+
+.site-subcontents-combini-img {
+	display: block;
+	align-self: center;
+}
+
+.site-subcontents-combini-eng {
+	padding-top: 15px;
+	width:250px;
+}
+
+.site-subcontents-combini-jpn {
+	width :250px;
+	padding-bottom: 20px;
+	font-family: "ヒラギノUD角ゴ Std";
 }
 
 .site-subcontents-ingredients {
