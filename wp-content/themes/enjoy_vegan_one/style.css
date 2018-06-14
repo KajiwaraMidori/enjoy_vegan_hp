@@ -680,14 +680,36 @@ a:hover, a:active {
 }
 
 .site-subcontents-icon {
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 
-.site-subcontents-text {
-	font-family: 'Open Sans', sans-serif;
+.site-subcontents-story {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: flex-start;
+}
+
+.site-subcontents-text1 {
+	font-size: 1.2em;
+	width: 30%;
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 1.8em;
+	padding-top: 10px;
+	min-width: 320px;
+}
+
+.site-subcontents-text2 {
 	font-size: 1.2em;
 	width: 70%;
+	padding-right: 10px;
+	padding-left: 10px;
 	line-height: 1.8em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-width: 320px;
 }
 
 .site-subcontents-orderimg {
@@ -697,7 +719,7 @@ a:hover, a:active {
 }
 
 .site-subcontents-combinis {
-	padding: 30px;
+	padding-bottom: 30px;
 	display: block;
 }
 
@@ -705,7 +727,7 @@ a:hover, a:active {
 .site-subcontents-combini-food {
 	display: inline-block;
 	width:auto;
-	padding-bottom: 60px;
+	padding-bottom: 10px;
 }
 
 .site-subcontents-combini-food1 {
@@ -741,25 +763,69 @@ a:hover, a:active {
 	font-family: "ヒラギノUD角ゴ Std";
 }
 
-.site-subcontents-ingredients {
-
+.site-subcontents-ingredients1 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-between;
+	align-items: flex-start;
+	width:70%;
+	margin: auto;
 }
-.site-subcontents-ingredients-label {
+
+.site-subcontents-ingredients2 {
+	padding-bottom:60px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-content: space-between;
+	align-items: flex-start;
+}
+.site-subcontents-ingredients3 {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.site-subcontents-ingredients4 {
+	padding-top: 10px;
+	width: 150px;
+}
+
+.site-subcontents-ingredients-eng {
+	font-size: 1.4em;	
+	line-height: 1em;
+}
+
+.site-subcontents-ingredients-eng2 {
+	font-size: 1.2em;	
+	line-height: 1em;
+}
+
+.site-subcontents-ingredients-jpn {
+	font-family: "ヒラギノ角ゴオールドStdN";
+	font-size: 1em;
+	line-height: 1.8em;
+}
+
+.site-subcontents-ingredients-jpn2 {
+	font-family: "ヒラギノ角ゴオールドStdN";
+	font-size: 0.7em;
+	line-height: 1.2em;
 
 }
 
 .site-subcontents-ingredients-warning {
 	width: 80%;
 	line-height: 1.8em;
-	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
 /* site-footer */
 .site-footer {
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	background-color: #515151;
 	color: #FFFFFF;
 }
@@ -772,7 +838,6 @@ a:hover, a:active {
 	padding-top: 5px;
 	padding-bottom: 30px;
 	line-height: 1.8em;
-	width: 85%;
 }
 
 .site-footer-SNS {
@@ -781,20 +846,27 @@ a:hover, a:active {
 	background-color: #60C8D3;
 }
 
+.site-footer-SNS1 {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	width: 40%;
+	margin: auto;
+}
+
 .site-footer-SNS-icon {
- 	display: inline;
-  	padding-right: 70px;
-  	vertical-align: middle;
+	padding-right: 3px;
+	padding-left: 3px;
 }
 
 .site-footer-email {
-	display: inline;
-	vertical-align: middle;
+	padding-left: 3px;	
 }
 
 .site-footer-copyright {
-	padding-top: 30px;
-	width: 80%;
+	padding-top: 15px;
 }
 
 /*--------------------------------------------------------------
