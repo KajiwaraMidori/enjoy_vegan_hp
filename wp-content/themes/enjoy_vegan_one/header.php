@@ -43,7 +43,7 @@
 						<div class="site-header-title">
 				      <img
 								class="site-header-map-japan"
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.svg"
+								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.jpg"
 								alt="click on a city to see it's restaurants!"
 							/>
 							<div class="site-header-map-city site-header-map-tokyo">
@@ -78,38 +78,22 @@
 									<!-- <?php the_custom_logo(); ?> -->
 									<!-- <?php bloginfo( 'name' ); ?> -->
 									<img
-										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.svg"
-										alt="Enjoy Vegan Japan logo"
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/EVJ_Logo_A.jpg"
+										alt="Enjoy Vegan Japan logo" width="400" height="400"
 									/>
 								</a>
 								<?php
 									$description = get_bloginfo( 'description', 'display' );
 									if ( $description || is_customize_preview() ){
 										?>
-											<div class="site-header-description">
+											<div class="site-header-description" style="font-size: 2rem">
 												<?php echo $description; /* WPCS: xss ok. */ ?>
 											</div>
 										<?php
 									}
 								?>
 							</h1>
-							<div class="site-header-search">
-								<div>
-									<img class="aligncenter"
-										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/click_search.svg"
-										alt="click here to search by hashtag!"
-									/>
-								</div>
-								<a
-									href="<?php echo esc_url( home_url( '/' ) );?>"
-									rel="search by hashtag"
-									>
-									<div>
-										<img
-											src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/search_hashtag_button.svg"
-											alt="click here to search by hashtag!"
-										/>
-									</div>
+							
 								</a>
 							</div>
 						</div>
@@ -125,7 +109,7 @@
 				}
 			?>
 
-			<!-- Navigation -->
+			<!-- Navigation --
 			<nav
 				id="site-navigation"
 				class="navbar main-navigation navbar-default navbar-fixed-top topnav"

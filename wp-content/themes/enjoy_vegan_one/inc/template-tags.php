@@ -13,22 +13,23 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 	 */
 	function enjoy_vegan_one_entry_footer() {
 		// Hide category and tag text for pages.
-		if (!function_exists('pin_icon')){
-			function pin_icon() {
-				?>
-					<img
-							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/marker_m.png"
-							alt=""
-							/>
-				<?php
-			}
-		}
+		
 		if (!function_exists('hash_icon')){
 			function hash_icon() {
 				?>
 					<img
-							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_m.png"
-							alt=""
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_m.svg"
+							alt="" width="18" height="18"
+							/>
+				<?php
+			}
+		}
+		if (!function_exists('pin_icon')){
+			function pin_icon() {
+				?>
+					<img
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/marker_m.svg"
+							alt="" width="20" height="20"
 							/>
 				<?php
 			}
@@ -42,13 +43,15 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 			if ( $categories_list ) {
 				printf(
 					'<span class="cat-links">' .
-					pin_icon() .
+					hash_icon() .
 					esc_html__( ' %1$s', 'enjoy_vegan_one' ) .
 					' </span>',
 					$categories_list
 				); // WPCS: XSS OK.
 			}
-
+		?>
+		<br>
+		<?php
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'enjoy_vegan_one' ) );
 			if ( $tags_list ) {
@@ -57,7 +60,7 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 				// <imgsrc="/images/1_header/h_tokyo_button.png"alt=""/>' etcetc
 				printf(
 					'<span class="tags-links">' .
-					hash_icon() .
+					pin_icon() .
 					esc_html__( ' %1$s', 'enjoy_vegan_one' ) .
 					' </span>',
 					$tags_list
@@ -85,22 +88,22 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 		// 	echo '</span>';
 		// }
 
-		edit_post_link(
-			sprintf(
-				wp_kses(
+		//edit_post_link(
+		//	sprintf(
+		//		wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( '(edit) <span class="screen-reader-text">%s</span>', 'enjoy_vegan_one' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			),
-			'<span class="edit-link">',
-			'</span>'
-		);
+		//			__( '(edit) <span class="screen-reader-text">%s</span>', 'enjoy_vegan_one' ),
+		//			array(
+		//				'span' => array(
+		//					'class' => array(),
+		//				),
+		//			)
+		//		),
+		//		get_the_title()
+		//	),
+		//	'<span class="edit-link">',
+		//	'</span>'
+		//);
 	}
 endif;
 

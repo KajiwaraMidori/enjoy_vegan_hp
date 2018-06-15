@@ -36,9 +36,14 @@ get_header(); ?>
 						 */
 						get_template_part( 'template-parts/content', get_post_format() );
 					}
-
+				?>
+				<br>
+				<div>古い投稿
+				<?php
 					the_posts_navigation();
-
+				?>
+				</div>
+				<?php
 				} else {
 
 					get_template_part( 'template-parts/content', 'none' );
