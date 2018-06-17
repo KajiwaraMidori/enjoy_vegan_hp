@@ -43,7 +43,7 @@
 						<div class="site-header-title">
 				      <img
 								class="site-header-map-japan"
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/japan_map.jpg"
+								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/vegan_dish.jpg"
 								alt="click on a city to see it's restaurants!"
 							/>
 							<div class="site-header-map-city site-header-map-tokyo">
@@ -55,7 +55,7 @@
 										class="site-header-map-tag"
 										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/hashtag_s.svg"
 									/>
-									<label class="site-header-map-city-text">Tokyo</label>
+									<label class="site-header-map-city-text" style="font-style: bold">Tokyo</label>
 								</a>
 							</div>
 							<div class="site-header-map-city site-header-map-kyoto">
@@ -78,7 +78,7 @@
 									<!-- <?php the_custom_logo(); ?> -->
 									<!-- <?php bloginfo( 'name' ); ?> -->
 									<img
-										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/EVJ_Logo_A.jpg"
+										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.svg"
 										alt="Enjoy Vegan Japan logo" width="400" height="400"
 									/>
 								</a>
@@ -86,7 +86,7 @@
 									$description = get_bloginfo( 'description', 'display' );
 									if ( $description || is_customize_preview() ){
 										?>
-											<div class="site-header-description" style="font-size: 2rem">
+											<div class="site-header-description" style="font-size: 2.0rem; font-weight: bold;">
 												<?php echo $description; /* WPCS: xss ok. */ ?>
 											</div>
 										<?php

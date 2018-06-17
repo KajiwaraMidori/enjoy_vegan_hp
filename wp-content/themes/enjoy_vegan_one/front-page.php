@@ -9,25 +9,25 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			<?php
-				if ( have_posts() ){
-					if ( is_home() && ! is_front_page() ){
-						?>
-							<header>
-								<h1 class="page-title screen-reader-text">
-									<?php single_post_title(); ?>
-								</h1>
-							</header>
-						<?php
-					}
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
+		<?php
+		if ( have_posts() ){
+			if ( is_home() && ! is_front_page() ){
+				?>
+				<header>
+					<h1 class="page-title screen-reader-text">
+						<?php single_post_title(); ?>
+					</h1>
+				</header>
+				<?php
+			}
 
 					// TODO: count number of posts, switch to `show more...` if array longer than 9
 
-					/* Start the Loop */
-					while ( have_posts() ){
-						the_post();
+			/* Start the Loop */
+			while ( have_posts() ){
+				the_post();
 
 						/*
 						 * Include the Post-Format-specific template for the content.
@@ -36,28 +36,34 @@ get_header(); ?>
 						 */
 						get_template_part( 'template-parts/content', get_post_format() );
 					}
+				/* 
+				the_posts_navigation( 
+					array(
+						'prev_text'           => '&lt; See Previous',
+						'next_text'           => 'See More &gt;',
+						'screen_reader_text'  => '',
+					)
+				);
+				*/
 				?>
-				<br>
-				<div>古い投稿
-				<?php
-					the_posts_navigation();
-				?>
-				</div>
-				<?php
-				} else {
-
-					get_template_part( 'template-parts/content', 'none' );
-
+				<div class="pagination_setting">
+					<?php
+				if (function_exists("pagination")) {
+					pagination($additional_loop->max_num_pages);
 				}
-			?>
+			} else {
+				get_template_part( 'template-parts/content', 'none' );
+
+			}
+				?>
 		</main><!-- #main -->
 
 
 		<div class="site-subcontents">
 			<div class="site-subcontents-icon">
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/2_ourstory/story_icon.svg"
-					alt="our story icon" width="70" height="70"
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/2_ourstory/story_icon.svg"
+				alt="our story icon" width="70" height="70"
 				/>
 			</div><!-- .site-subcontents-icon -->
 			<img
@@ -82,24 +88,24 @@ get_header(); ?>
 		<div class="site-subcontents">
 			<div class="site-subcontents-icon">
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_icon.svg"
-					alt="How to order vegan food" width="146" height="146"
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_icon.svg"
+				alt="How to order vegan food" width="146" height="146"
 				/>
 			</div><!-- .site-subcontents-icon -->
 			<img
-				src="<?php echo esc_url( get_template_directory_uri() );?>/images/border.svg" width="338" height="328"
+			src="<?php echo esc_url( get_template_directory_uri() );?>/images/border.svg" width="338" height="328"
 			/>
 			<p class="site-subcontents-text2 aligncenter">
 				Please show this screen to the staff to tell your requirements when you ask for vegan menus.
 			</p><!-- .subcontents-text -->
 			<div class="site-subcontents-orderimg">
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_img2.png"
-					alt="How to order vegan food" width="400" height="400"
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_img2.png"
+				alt="How to order vegan food" width="400" height="400"
 				/>
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_img1.svg"
-					alt="How to order vegan food" width="470" height="470"
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/3_order/order_img1.svg"
+				alt="How to order vegan food" width="470" height="470"
 				/>
 			</div><!-- .site-subcontents-orderimg -->
 		</div><!-- .site-subcontents -->
@@ -108,12 +114,12 @@ get_header(); ?>
 		<div class="site-subcontents">
 			<div class="site-subcontents-icon">
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/combinis_icon.svg"
-					alt="Vegan in Combinis" width="147" height="147"
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/combinis_icon.svg"
+				alt="Vegan in Combinis" width="147" height="147"
 				/>
 			</div><!-- .site-subcontents-icon -->
 			<img
-				src="<?php echo esc_url( get_template_directory_uri() );?>/images/border.svg" width="338" height="328"
+			src="<?php echo esc_url( get_template_directory_uri() );?>/images/border.svg" width="338" height="328"
 			/>
 			<p class="site-subcontents-text2 aligncenter">
 				Enjoy shopping in combinis!<br>
@@ -121,8 +127,8 @@ get_header(); ?>
 			</p>
 			<div class="site-subcontents-combinis">
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/food_icon.svg"
-					alt="Vegan Food in Combinis" width="230" height="230"
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/food_icon.svg"
+				alt="Vegan Food in Combinis" width="230" height="230"
 				/>
 			</div><!-- .site-subcontents-combinis-food -->
 
@@ -131,8 +137,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/ume.svg"
-								alt="plum onigiri" width="126" height="121"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/ume.svg"
+							alt="plum onigiri" width="126" height="121"
 							/>
 						</div><!-- plum onigiri -->
 						<div class="site-subcontents-combini-eng">
@@ -146,8 +152,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/edamame.svg"
-								alt="edamame" width="100" height="117"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/edamame.svg"
+							alt="edamame" width="100" height="117"
 							/>
 						</div><!-- edamame -->
 						<div class="site-subcontents-combini-eng">
@@ -161,8 +167,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/inari.svg"
-								alt="sushi wrapped with deep-fried bean curd" width="140" height="140"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/inari.svg"
+							alt="sushi wrapped with deep-fried bean curd" width="140" height="140"
 							/>
 						</div><!-- inari sushi -->
 						<div class="site-subcontents-combini-eng">
@@ -178,8 +184,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/onigiri.svg"
-								alt="salted onigiri" width="138" height="128"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/onigiri.svg"
+							alt="salted onigiri" width="138" height="128"
 							/>
 						</div><!-- onigiri -->
 						<div class="site-subcontents-combini-eng">
@@ -193,8 +199,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/sekihan.svg"
-								alt="salted onigiri" width="140" height="130"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/sekihan.svg"
+							alt="salted onigiri" width="140" height="130"
 							/>
 						</div><!-- sekihan -->
 						<div class="site-subcontents-combini-eng">
@@ -209,8 +215,8 @@ get_header(); ?>
 
 			<div class="site-subcontents-combinis">
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/sweets_icon.svg"
-					alt="Vegan Sweets in Combinis" width="275" height="275"
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/sweets_icon.svg"
+				alt="Vegan Sweets in Combinis" width="275" height="275"
 				/>
 			</div><!-- .site-subcontents-combinis-sweets -->
 
@@ -219,8 +225,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/anmitsu.png"
-								alt="assortd beans, agar jelly and fruits in syrup" width="150" height="150"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/anmitsu.png"
+							alt="assortd beans, agar jelly and fruits in syrup" width="150" height="150"
 							/>
 						</div><!-- anmitsu -->
 						<div class="site-subcontents-combini-eng">
@@ -234,8 +240,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/amaguri.svg"
-								alt="sweet roasted chestnuts" width="160" height="125"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/amaguri.svg"
+							alt="sweet roasted chestnuts" width="160" height="125"
 							/>
 						</div><!-- amaguri -->
 						<div class="site-subcontents-combini-eng">
@@ -249,8 +255,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/mitarashi.svg"
-								alt="rice dumpling with sweet soy glaze" width="190" height="80"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/mitarashi.svg"
+							alt="rice dumpling with sweet soy glaze" width="190" height="80"
 							/>
 						</div><!-- mitarashi -->
 						<div class="site-subcontents-combini-eng">
@@ -266,8 +272,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/anko.svg"
-								alt="rice dumpling with sweet red beans paste" width="190" height="190"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/anko.svg"
+							alt="rice dumpling with sweet red beans paste" width="190" height="190"
 							/>
 						</div><!-- andango -->						<div class="site-subcontents-combini-eng">
 							<p class="aligncenter">rice dumpling with<br>sweet red beans paste</p>
@@ -280,8 +286,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/jelly.png"
-								alt="agar jelly " width="190" height="125"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/jelly.png"
+							alt="agar jelly " width="190" height="125"
 							/>
 						</div><!-- jelly -->
 						<div class="site-subcontents-combini-eng">
@@ -295,8 +301,8 @@ get_header(); ?>
 					<div class="site-subcontents-combini-item">
 						<div class="site-subcontents-combini-img">
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/youkan.svg"
-								alt="jellied sweet red beans paste " width="200" height="200"
+							src="<?php echo esc_url( get_template_directory_uri() );?>/images/4_combinis/youkan.svg"
+							alt="jellied sweet red beans paste " width="200" height="200"
 							/>
 						</div><!-- youkan -->
 						<div class="site-subcontents-combini-eng">
@@ -314,12 +320,12 @@ get_header(); ?>
 		<div class="site-subcontents">
 			<div class="site-subcontents-icon">
 				<img
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/ingredients_icon.svg"
-					alt="Ingredients ENG/JPN dictionary" width="140" height="140"
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/5_ingredients/ingredients_icon.svg"
+				alt="Ingredients ENG/JPN dictionary" width="140" height="140"
 				/>
 			</div><!-- .subcontents-icon -->
 			<img
-				src="<?php echo esc_url( get_template_directory_uri() );?>/images/border.svg" width="338" height="328"
+			src="<?php echo esc_url( get_template_directory_uri() );?>/images/border.svg" width="338" height="328"
 			/>
 			<p class="site-subcontents-text2 aligncenter">
 				Tired of looking up Japanese ingredients in Japanese to English dictonary?<br>Here we listed up major ingredients in both English & Japanese.
@@ -836,5 +842,5 @@ get_header(); ?>
 
 	</div><!-- #primary -->
 
-<?php
-get_footer();
+	<?php
+	get_footer();

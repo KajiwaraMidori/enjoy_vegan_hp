@@ -484,7 +484,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: midnightblue;
+	color: #47BEA0;
 }
 
 a:visited {
@@ -492,7 +492,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #47BEA0;
 }
 
 a:focus {
@@ -644,7 +644,7 @@ a:hover, a:active {
 .site-header-logo {
    position: absolute;
    top: 25%;
-   left: 23%;
+   left: 10%;
    width: 50%;
    height: 50%;
    margin: 0;
@@ -654,8 +654,11 @@ a:hover, a:active {
 	color: #ffffff;
 	text-align: left;
 	margin: 2% 0 0 0;
+	text-shadow:
+	1px 1px 1px #000;
 }
 
+/* Search by Hashtag　実装持ち越し
 .site-header-search {
 	position: absolute;
 	bottom: 10%;
@@ -664,8 +667,10 @@ a:hover, a:active {
 	height: 15%;
 	margin: 0;
 }
+*/
 
 .site-main {
+	font-size: 1.3em;
 	padding-top: 2%;
 	padding-right: 10%;
 	padding-left: 10%;
@@ -675,6 +680,71 @@ a:hover, a:active {
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: center;
+}
+
+/* pagenation */
+
+.pagination_setting {
+	font-size: 1.2em;
+	padding-right: 10%;
+	padding-left: 10%;
+	background-color: #ECEFE4;
+}
+
+
+.pagination {
+	clear: both;
+	padding: 20px 0;
+	position: relative;
+	font-size: 1.2em;;
+	line-height: 1em;
+    text-align: center;
+}
+
+.pagination-box {
+	display: inline-block;
+}
+.pagination span, .pagination a {
+	display: block;
+	float: left;
+	margin: 2px 2px 2px 0;
+	padding: 10px 14px 10px 14px;
+	text-decoration: none;
+	width: auto;
+	color: #fff;
+	background: #47BEA0;
+	border-radius: 50%;
+}
+
+.pagination span.page-of {
+	background: none;
+	color: #47BEA0;
+}
+
+.pagination a:hover{
+	color: #47BEA0;
+	background: #F9D635;
+}
+
+.pagination .current{
+	padding: 10px 14px 10px 14px;
+	background: #F9D635;
+	color: #47BEA0;
+}
+
+/*　他のデザインが崩れるのでコメントアウト
+@media only screen and (max-width: 413px) {
+.pagination {
+	font-size: 12px;
+	line-height: 12px;
+}
+*/
+
+.pagination span, .pagination a {
+	padding: 7px 10px 7px 10px;
+}
+.pagination .current{
+	padding: 7px 10px 7px 10px;
 }
 
 /* site-subcontents */
@@ -705,7 +775,7 @@ a:hover, a:active {
 }
 
 .site-subcontents-text2 {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	width: 70%;
 	padding-right: 10px;
 	padding-left: 10px;
