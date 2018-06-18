@@ -17,36 +17,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link
-		href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,700"
-		rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,700"
+	rel="stylesheet"
 	>
 	<link
-		rel="stylesheet"
-		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-		crossorigin="anonymous"
+	rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous"
 	>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content">
-		<?php esc_html_e( 'Skip to content', 'enjoy_vegan_one' ); ?>
-	</a>
+	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#content">
+			<?php esc_html_e( 'Skip to content', 'enjoy_vegan_one' ); ?>
+		</a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
+		<header id="masthead" class="site-header">
+			<div class="site-branding">
+				<?php
 				if ( is_front_page() && is_home() ){
 					?>
-						<div class="site-header-title">
-				      <img
-								class="site-header-map-japan"
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/vegan_dish.jpg"
-								alt="click on a city to see it's restaurants!"
-							/>
-							<div class="site-header-map-city site-header-map-tokyo">
+					<div class="site-header-title">
+						<img
+						class="site-header-map-japan"
+						src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/vegan_dish.jpg"
+						alt=""
+						/>
+
+						<?php
+						/*	次回リリース時に実装
+						<div class="site-header-map-city site-header-map-tokyo">
 								<a
 									href="<?php echo esc_url(get_category_link( get_cat_ID( "tokyo" ))); ?>"
 									rel="search in Tokyo"
@@ -70,46 +73,48 @@
 									<label class="site-header-map-city-text">Kyoto</label>
 								</a>
 							</div>
-				      <h1 class="site-header-logo">
+							*/　?>
+							<h1 class="site-header-logo">
 								<a
-									href="<?php echo esc_url( home_url( '/' ) );?>"
-									rel="home"
-									>
-									<!-- <?php the_custom_logo(); ?> -->
-									<!-- <?php bloginfo( 'name' ); ?> -->
-									<img
-										src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.svg"
-										alt="Enjoy Vegan Japan logo" width="400" height="400"
-									/>
-								</a>
-								<?php
-									$description = get_bloginfo( 'description', 'display' );
-									if ( $description || is_customize_preview() ){
-										?>
-											<div class="site-header-description" style="font-size: 2.0rem; font-weight: bold;">
-												<?php echo $description; /* WPCS: xss ok. */ ?>
-											</div>
-										<?php
-									}
-								?>
-							</h1>
-							
-								</a>
-							</div>
-						</div>
-					<?php
-				} else {
-					?>
-						<h1 class="site-header-title">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-								<?php bloginfo( 'name' ); ?>
+								href="<?php echo esc_url( home_url( '/' ) );?>"
+								rel="home"
+								>
+								<!-- <?php the_custom_logo(); ?> -->
+								<!-- <?php bloginfo( 'name' ); ?> -->
+								<img
+								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.svg"
+								alt="Enjoy Vegan Japan logo" width="400" height="400"
+								/>
 							</a>
 						</h1>
-					<?php
-				}
-			?>
+						<?php
+						$description = get_bloginfo( 'description', 'display' );
+						if ( $description || is_customize_preview() ){
+							?>
+							<h1 class="site-header-description">
+								<?php echo $description; /* WPCS: xss ok. */ ?>
+							</h1>
+							<?php
+						}
+						?>
+					</h1>
 
-			<!-- Navigation --
+				</a>
+			</div>
+		</div>
+		<?php
+	} else {
+		?>
+		<h1 class="site-header-title">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<?php bloginfo( 'name' ); ?>
+			</a>
+		</h1>
+		<?php
+	}
+	?>
+
+			<!-- Navigation -
 			<nav
 				id="site-navigation"
 				class="navbar main-navigation navbar-default navbar-fixed-top topnav"
@@ -120,7 +125,7 @@
 					aria-controls="primary-menu"
 					aria-expanded="false"
 				  >
-					<?php esc_html_e( 'Menu', 'enjoy_vegan_one' ); ?>
+					<?php /* esc_html_e( 'Menu', 'enjoy_vegan_one' ); ?>
 				</button>
 
 				<?php
@@ -128,8 +133,9 @@
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',
 					) );
+					*/
 				?>
-			</nav><!-- #site-navigation -->
+			</nav> <!#site-navigation -->
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 
