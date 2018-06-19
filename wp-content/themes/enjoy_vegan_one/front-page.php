@@ -36,7 +36,7 @@ get_header(); ?>
 						 */
 						get_template_part( 'template-parts/content', get_post_format() );
 					}
-				/* 
+				/* ページネーションを使用するためコメントアウト
 				the_posts_navigation( 
 					array(
 						'prev_text'           => '&lt; See Previous',

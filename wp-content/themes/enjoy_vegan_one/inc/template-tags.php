@@ -17,20 +17,20 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 		if (!function_exists('hash_icon')){
 			function hash_icon() {
 				?>
-					<img
-							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_m.svg"
-							alt="" width="18" height="18"
-							/>
+				<img
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/hashtag_m.svg"
+				alt="" width="18" height="18"
+				/>
 				<?php
 			}
 		}
 		if (!function_exists('pin_icon')){
 			function pin_icon() {
 				?>
-					<img
-							src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/marker_m.svg"
-							alt="" width="20" height="20"
-							/>
+				<img
+				src="<?php echo esc_url( get_template_directory_uri() );?>/images/7_search/marker_m.svg"
+				alt="" width="20" height="20"
+				/>
 				<?php
 			}
 		}
@@ -49,9 +49,9 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 					$categories_list
 				); // WPCS: XSS OK.
 			}
-		?>
-		<br>
-		<?php
+			?>
+			<br>
+			<?php
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'enjoy_vegan_one' ) );
 			if ( $tags_list ) {
@@ -68,7 +68,7 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 			}
 		}
 
-		// NOTE: remove commenting for now.
+		// NOTE: remove commenting.
 		// if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		// 	echo '<span class="comments-link">';
 		// 	comments_popup_link(
@@ -91,7 +91,7 @@ if ( ! function_exists( 'enjoy_vegan_one_entry_footer' ) ) :
 		//edit_post_link(
 		//	sprintf(
 		//		wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
+		/* translators: %s: Name of current post. Only visible to screen readers */
 		//			__( '(edit) <span class="screen-reader-text">%s</span>', 'enjoy_vegan_one' ),
 		//			array(
 		//				'span' => array(
@@ -119,23 +119,23 @@ function enjoy_vegan_one_post_thumbnail() {
 	}
 
 	if ( is_singular() ) :
-	?>
+		?>
 
-	<div class="post-thumbnail">
-		<?php the_post_thumbnail(); ?>
-	</div><!-- .post-thumbnail -->
+		<div class="post-thumbnail">
+			<?php the_post_thumbnail(); ?>
+		</div><!-- .post-thumbnail -->
 
 	<?php else : ?>
 
-	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
-		<?php
+		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+			<?php
 			the_post_thumbnail( 'post-thumbnail', array(
 				'alt' => the_title_attribute( array(
 					'echo' => false,
 				) ),
 			) );
-		?>
-	</a>
+			?>
+		</a>
 
 	<?php endif; // End is_singular().
 }
