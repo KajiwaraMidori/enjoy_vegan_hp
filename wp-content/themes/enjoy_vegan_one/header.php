@@ -35,14 +35,13 @@
 			<?php esc_html_e( 'Skip to content', 'enjoy_vegan_one' ); ?>
 		</a>
 
-		<header id="masthead" class="site-header">
-			<div class="site-branding">
+		<header id="masthead" class="site-header">	
 				<?php
 				/*　常にヘッダー表示
 				if ( is_front_page() && is_home() ){
 					*/
 				?>
-				<div class="site-header-title">
+				
 					<img
 					class="site-header-image"
 					src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/vegan_dish.jpg"
@@ -101,7 +100,7 @@
 					<?php
 						}
 					?>
-				</div><!-- site-header-title -->
+					
 				<?php 
 				/* 常にヘッダー表示
 				} else {
@@ -139,7 +138,6 @@
 					*/
 				?>
 			</nav> <!#site-navigation -->
-			</div><!-- .site-branding -->
 		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -600,14 +600,11 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 
 .site-header {
-	/* tsubasa
-	font-weight: 700;
-	*/
-}
-
-.site-header-title {
 	display: block;
 	position: relative;
+	/* tsubasa
+	font-weight: 700;
+*/
 }
 
 /* tsubasa
@@ -619,21 +616,26 @@ a:hover, a:active {
 */
 
 .site-header-logo {
+
 	position: absolute;
 	top: 23%;
 	left: 10%;
 	width: 50%;
 	height: 50%;
 	margin: 0;
+	
 }
 
 .site-header-description {
+
+	
 	position: absolute;
 	top: 43%;
 	left: 10%;
 	width: 60%;
 	height: 50%;
 	margin: 0;
+	
 	font-size: calc(112.5% + 1.2vw);
 	font-weight: bold;
 	color: #ffffff;
