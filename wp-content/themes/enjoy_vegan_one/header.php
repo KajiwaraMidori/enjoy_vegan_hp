@@ -83,20 +83,21 @@
 							>
 							<!-- <?php the_custom_logo(); ?> -->
 							<!-- <?php bloginfo( 'name' ); ?> -->
-							<img
+							<img class="aligncenter"
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.svg"
-								alt="Enjoy Vegan Japan logo" width="400" height="400"
+								alt="Enjoy Vegan Japan logo" width="550" height="550"
 							/>
 						</a>
-					</h1>
+					
 					<?php
 						$description = get_bloginfo( 'description', 'display' );
 						if ( $description || is_customize_preview() ){
 					?>
-					<h1 class="site-header-description">
+					<div class="site-header-description">
 						<?php echo $description; /* WPCS: xss ok. */ 
 						?>
-					</h1>
+					</div>
+				</h1>
 					<?php
 						}
 					?>

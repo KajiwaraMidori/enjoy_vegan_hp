@@ -616,33 +616,25 @@ a:hover, a:active {
 */
 
 .site-header-logo {
-
 	position: absolute;
-	top: 23%;
-	left: 10%;
-	width: 50%;
-	height: 50%;
+	top: 28%;
+	left: 8%;
+	width: 55vw;
+	height: 50vh;
 	margin: 0;
-	
 }
 
 .site-header-description {
-
-	
-	position: absolute;
-	top: 43%;
-	left: 10%;
-	width: 60%;
-	height: 50%;
-	margin: 0;
-	
-	font-size: calc(112.5% + 1.2vw);
-	font-weight: bold;
+	/* calcに時間がかかるのでコメントアウト
+	font-size: calc(112.5% + 0.1vw);
+	*/
+	font-size: 5vw;
+/*	font-weight: bold;*/
 	color: #ffffff;
 	text-align: left;
 	margin: 2% 0 0 0;
 	text-shadow:
-	1px 1px 1px #000;
+	1.5px 1.5px 1.5px #000;
 }
 
 /*　次回リリース時に実装
@@ -843,7 +835,9 @@ a:hover, a:active {
 .site-subcontents-combini-jpn {
 	width :250px;
 	padding-bottom: 20px;
-	font-family: "ヒラギノUD角ゴ Std";
+	font-size: 0.9em;
+	font-family: 'ヒラギノUD角ゴ Std', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+
 }
 
 .site-subcontents-ingredients1 {
@@ -887,14 +881,14 @@ a:hover, a:active {
 }
 
 .site-subcontents-ingredients-jpn {
-	font-family: "ヒラギノ角ゴオールドStdN";
+	font-family: 'ヒラギノ角ゴオールドStdN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 	font-size: 1em;
 	line-height: 1.8em;
 }
 
 .site-subcontents-ingredients-jpn2 {
-	font-family: "ヒラギノ角ゴオールドStdN";
-	font-size: 0.7em;
+	font-family: 'ヒラギノ角ゴオールドStdN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+	font-size: 0.8em;
 	line-height: 1.2em;
 
 }
