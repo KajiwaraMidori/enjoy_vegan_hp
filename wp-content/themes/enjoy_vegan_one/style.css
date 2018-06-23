@@ -265,7 +265,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	/* color: #404040; */
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -615,6 +615,7 @@ a:hover, a:active {
 }
 */
 
+/* botsu 20180623
 .site-header-logo {
 	position: absolute;
 	top: 28%;
@@ -628,14 +629,18 @@ a:hover, a:active {
 	/* calcに時間がかかるのでコメントアウト
 	font-size: calc(112.5% + 0.1vw);
 	*/
+	/*	
+	font-weight: bold;
+	*/
+	/* botsu 20180623
 	font-size: 5vw;
-/*	font-weight: bold;*/
 	color: #ffffff;
 	text-align: left;
 	margin: 2% 0 0 0;
 	text-shadow:
 	1.5px 1.5px 1.5px #000;
 }
+*/
 
 /*　次回リリース時に実装
 .site-header-map-city {
@@ -681,7 +686,7 @@ a:hover, a:active {
 	padding-right: 0%;
 	padding-left: 0%;
 	background-color: #FCFFF5;
-	display: flex; /* or inline-flex */
+	display: flex; 	
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: flex-start;
@@ -692,7 +697,6 @@ a:hover, a:active {
 .pagination_setting {
 	width: 100%;
 }
-
 .pagination {
 	clear: both;
 	padding: 20px 0;
@@ -702,7 +706,6 @@ a:hover, a:active {
 	text-align: center;
 	margin-bottom: 50px;
 }
-
 .pagination-box {
 	display: inline-block;
 }
@@ -717,23 +720,19 @@ a:hover, a:active {
 	background: #F9D635;
 	border-radius: 50%;
 }
-
 .pagination span.page-of {
 	background: none;
 	color: #508B24;
 }
-
 .pagination a:hover{
 	color: #FFFFFF;
 	background: #79D337;
 }
-
 .pagination .current{
 	padding: 10px 14px 10px 14px;
 	background: #69B62D;
 	color: #FFFFFF;
 }
-
 /*　他のデザインが崩れるのでコメントアウト
 @media only screen and (max-width: 413px) {
 .pagination {
@@ -741,7 +740,6 @@ a:hover, a:active {
 	line-height: 12px;
 }
 */
-
 .pagination span, .pagination a {
 	padding: 7px 10px 7px 10px;
 }
@@ -768,7 +766,7 @@ a:hover, a:active {
 
 .site-subcontents-text1 {
 	font-size: 1.2em;
-	width: 30%;
+	width: 35%;
 	padding-right: 10px;
 	padding-left: 10px;
 	line-height: 1.8em;
@@ -851,7 +849,15 @@ a:hover, a:active {
 }
 
 .site-subcontents-ingredients2 {
-	padding-bottom:60px;
+	padding-bottom:50px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-content: space-between;
+	align-items: flex-start;
+}
+.site-subcontents-ingredients2_h {
+	padding-top: 60px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-around;
@@ -894,56 +900,72 @@ a:hover, a:active {
 }
 
 .site-subcontents-ingredients-warning {
-	width: 80%;
+	width: 50%;
+	min-width: 400px;
+	padding-left: 20px;
+	padding-right: 20px;
 	line-height: 1.8em;
-	padding-bottom: 30px;
+	padding-bottom: 70px;
 }
 
 /* site-footer */
 .site-footer {
 	font-weight: 400;
-	padding-bottom: 20px;
-	background-color: #515151;
+	padding: 15px 0;
+	background-color: #6fbc6f;
 	color: #FFFFFF;
-}
-
-.site-footer-disclaimer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: flex-end; /*or center*/
+	align-items: flex-start;
 	padding-top: 20px;
 }
 
-.site-footer-disclaimer-text {
-	padding-top: 5px;
-	padding-bottom: 30px;
-	line-height: 1.8em;
-}
-
+/*sns icon*/
 .site-footer-SNS {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: #5AA52E;
-}
-
-.site-footer-SNS1 {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-around;
-	align-content: center;
+	justify-content: center; /*or space-around*/
+	align-content: center
 	align-items: center;
 	width: 40%;
+	min-width: 400px;
 	margin: auto;
 }
 
 .site-footer-SNS-icon {
-	padding-right: 3px;
-	padding-left: 3px;
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 .site-footer-email {
-	padding-left: 3px;	
+	padding-left: 30px;	
+	padding-right: 30px;
 }
 
+
+/*disclaimar*/
+.site-footer-disclaimer {
+	padding-top: 20px;
+	width: 30%;
+}
+
+.site-footer-disclaimer-text {
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	line-height: 1.8em;
+	width: 50%;
+	min-width: 400px;
+}
+
+/*copyright*/
 .site-footer-copyright {
-	padding-top: 15px;
+	padding-top: 8px;
+	background-color: #2d2d2d;
+	color: #FFFFFF;
 }
 
 /*--------------------------------------------------------------

@@ -12,22 +12,12 @@
 ?>
 
 	</div><!-- #content -->
-	<footer id="colophon" class="site-footer">
-
-		<div class="site-footer-disclaimer">
-			<h5>
-			DISCLAIMER
-			</h5>
-
-			<div class="site-footer-disclaimer-text aligncenter">
-				The information that we present here is given to the best of our knowledge, <br>
-				but we cannot guarantee the accuracy of the provided information. <br>
-				Please try your best to confirm yourself that what you consume meets your requirements.
-			</div><!-- .site-footer-disclaimer-text -->
-		</div><!-- .site-footer-disclaimer -->
-
-		<div class="site-footer-SNS">
-			<div class="site-footer-SNS1">
+		<img
+			src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/footer_logo.svg"
+			alt="" width="53" height="53"
+		/>
+		<footer id="colophon" class="site-footer">
+			<div class="site-footer-SNS">
 				<div class="site-footer-SNS-icon">
 					<a
 						href="<?php echo esc_url( "https://www.facebook.com/enjoy.vegan.japan/" );?>"
@@ -39,8 +29,7 @@
 							alt="jump to our faecebook account!" width="33" height="33"
 						/>
 					</a>
-				</div>
-
+				</div><!-- .site-footer-SNS-icon -->
 				<div class="site-footer-SNS-icon">
 					<a
 						href="<?php echo esc_url( "https://www.instagram.com/enjoy.vegan.japan/" );?>"
@@ -52,8 +41,7 @@
 							alt="jump to our instagram account!" width="33" height="33"
 						/>
 					</a>
-				</div>
-
+				</div><!-- .site-footer-SNS-icon -->
 				<div class="site-footer-SNS-icon">
 					<a
 						href="<?php echo esc_url( "https://twitter.com/EnjoyVEGANJAPAN" );?>"
@@ -65,8 +53,7 @@
 							alt="jump to our twitter account!" width="33" height="33"
 						/>
 					</a>
-				</div>
-
+				</div><!-- .site-footer-SNS-icon -->
 				<div class="site-footer-email">
 					<a
 						href="mailto: enjoy.vegan.japan@gmail.com?subject=[Contact Enjoy VEGAN JAPAN via Website]&amp;body=Thank you for contacting us!%0d%0aWe will reply to your message within a week.%0d%0a%0d%0aEnjoy VEGAN JAPAN Team"
@@ -79,13 +66,28 @@
 						/>
 					</a>
 				</div><!-- .site-footer-email -->
-			</div><!-- .site-footer-SNS1 -->
-			<div class="site-footer-copyright aligncenter">
-				Copyright &#9426 2018 <?php bloginfo('name'); ?> All Rights Reserved.
-			</div><!-- .site-footer-copyright -->
-		</div><!-- .site-footer-SNS -->
+			</div><!-- .site-footer-SNS -->
 
-	</footer><!-- #colophon -->
+			<?php /*
+			<div class="site-footer-disclaimer">
+			<h1>
+			DISCLAIMER
+			</h1>
+			*/ ?>
+
+			<div class="site-footer-disclaimer-text aligncenter" style="text-align: left">
+				DISCLAIMER: Information presented above are given to the best of our knowledge but accuracy cannot be guaranteed. 
+				Please confirm what is to be consumed meets your requirements.
+			</div><!-- .site-footer-disclaimer-text -->
+			<?php /*
+			</div><!-- .site-footer-disclaimer --> */
+			?>
+		</footer><!-- #colophon -->
+
+		<div class="site-footer-copyright aligncenter">
+			Copyright &#9426 2018 <?php bloginfo('name'); ?> All Rights Reserved.
+		</div><!-- .site-footer-copyright -->
+
 	</div><!-- #page -->
 
 <?php wp_footer(); ?>

@@ -76,6 +76,8 @@
 					</div>
 					*/　
 					?>
+					<?php 
+					/*　　一時的にコメントアウト
 					<h1 class="site-header-logo">
 						<a
 							href="<?php echo esc_url( home_url( '/' ) );?>"
@@ -85,7 +87,7 @@
 							<!-- <?php bloginfo( 'name' ); ?> -->
 							<img class="aligncenter"
 								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.svg"
-								alt="Enjoy Vegan Japan logo" width="550" height="550"
+								alt="Enjoy Vegan Japan logo" width="1050" height="1050"
 							/>
 						</a>
 					
@@ -99,7 +101,7 @@
 					</div>
 				</h1>
 					<?php
-						}
+						/* }　　一時的にコメントアウト
 					?>
 					
 				<?php 
