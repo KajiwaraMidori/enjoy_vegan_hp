@@ -34,12 +34,14 @@ get_header(); ?>
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */?>
+						 <?php /*
 					 		<img
 					src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/bl_01.svg"
 					alt="our story icon" width="20" height="20"
-					/>
+					/> */
+					?>
 					<?php 
-					echo get_the_title(); 
+					/*echo get_the_title(); */
 
 						get_template_part( 'template-parts/content', get_post_format() );
 					}

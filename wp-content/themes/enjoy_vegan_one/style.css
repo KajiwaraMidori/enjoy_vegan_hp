@@ -352,10 +352,12 @@ hr {
 
 ul, ol {
 	margin: 0 0 1.5em 3em;
+	list-style: none;
 }
 
 ul {
 	list-style: disc;
+	list-style: none;
 }
 
 ol {
@@ -366,6 +368,7 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
+	list-style: none;
 }
 
 dt {

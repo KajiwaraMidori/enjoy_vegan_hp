@@ -37,7 +37,7 @@
 
 		<header id="masthead" class="site-header">	
 				<?php
-				/*　常にヘッダー表示
+				/* 常にヘッダー表示
 				if ( is_front_page() && is_home() ){
 					*/
 				?>
@@ -101,7 +101,8 @@
 					</div>
 				</h1>
 					<?php
-						/* }　　一時的にコメントアウト
+						/* }　
+						 /*↑常にヘッダー表示する場合はコメントアウト*/
 					?>
 					
 				<?php 
