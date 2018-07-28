@@ -40,7 +40,7 @@ get_header(); ?>
 					/>
 					<?php 
 					echo get_the_title(); 
-					
+
 						get_template_part( 'template-parts/content', get_post_format() );
 					}
 				/* ページネーションを使用するためコメントアウト

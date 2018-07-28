@@ -741,10 +741,10 @@ a:hover, a:active {
 }
 */
 .pagination span, .pagination a {
-	padding: 7px 10px 7px 10px;
+	padding: 4px 10px 4px 10px;
 }
 .pagination .current{
-	padding: 7px 10px 7px 10px;
+	padding: 4px 10px 4px 10px;
 }
 
 /* site-subcontents */
@@ -911,14 +911,10 @@ a:hover, a:active {
 /* site-footer */
 .site-footer {
 	font-weight: 400;
-	padding: 15px 0;
+	padding-top: 15px;
 	background-color: #6fbc6f;
 	color: #FFFFFF;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-content: flex-end; /*or center*/
-	align-items: flex-start;
+	display: block;
 	padding-top: 20px;
 }
 
@@ -930,6 +926,7 @@ a:hover, a:active {
 	align-content: center;
 	align-items: center;
 	width: 40%;
+	padding: 30px;
 	min-width: 400px;
 	margin: auto;
 }
@@ -957,7 +954,7 @@ a:hover, a:active {
 	padding-right: 30px;
 	padding-bottom: 20px;
 	line-height: 1.8em;
-	width: 50%;
+	width: 45%;
 	min-width: 400px;
 }
 

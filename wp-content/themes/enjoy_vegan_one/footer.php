@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 		<img
 			src="<?php echo esc_url( get_template_directory_uri() );?>/images/6_footer/footer_logo.svg"
-			alt="" width="53" height="53"
+			alt="" width="73" height="73"
 		/>
 		<footer id="colophon" class="site-footer">
 			<div class="site-footer-SNS">
@@ -68,20 +68,11 @@
 				</div><!-- .site-footer-email -->
 			</div><!-- .site-footer-SNS -->
 
-			<?php /*
-			<div class="site-footer-disclaimer">
-			<h1>
-			DISCLAIMER
-			</h1>
-			*/ ?>
 
-			<div class="site-footer-disclaimer-text aligncenter" style="text-align: left">
+			<div class="site-footer-disclaimer-text aligncenter" style="text-align: center;">
 				DISCLAIMER: Information presented above are given to the best of our knowledge but accuracy cannot be guaranteed. 
 				Please confirm what is to be consumed meets your requirements.
 			</div><!-- .site-footer-disclaimer-text -->
-			<?php /*
-			</div><!-- .site-footer-disclaimer --> */
-			?>
 		</footer><!-- #colophon -->
 
 		<div class="site-footer-copyright aligncenter">
