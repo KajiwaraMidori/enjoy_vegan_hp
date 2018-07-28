@@ -927,7 +927,7 @@ a:hover, a:active {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center; /*or space-around*/
-	align-content: center
+	align-content: center;
 	align-items: center;
 	width: 40%;
 	min-width: 400px;

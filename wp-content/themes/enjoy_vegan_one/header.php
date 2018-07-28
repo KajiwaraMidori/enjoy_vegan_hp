@@ -44,7 +44,7 @@
 				
 					<img
 					class="site-header-image"
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/vegan_dish.jpg"
+					src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/main_img.jpg"
 					alt=""
 					/>
 
