@@ -40,7 +40,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
---------------------------------------------------------------*/
+	--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -265,7 +265,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	/* color: #404040; */
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -352,10 +352,12 @@ hr {
 
 ul, ol {
 	margin: 0 0 1.5em 3em;
+	list-style: none;
 }
 
 ul {
 	list-style: disc;
+	list-style: none;
 }
 
 ol {
@@ -366,6 +368,7 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
+	list-style: none;
 }
 
 dt {
@@ -484,15 +487,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #508B24;
 }
 
 a:visited {
-	color: purple;
+	color: midnightblue;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #5DA029;
 }
 
 a:focus {
@@ -600,65 +603,151 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 
 .site-header {
-	font-weight: 700;
-}
-
-.site-header-title {
 	display: block;
 	position: relative;
+	/* tsubasa
+	font-weight: 700;
+*/
 }
 
-.site-header-map-japan {
+/* tsubasa
+.site-header-image {
 	width: 100%;
+	height: 80%;
+	/* TODO: collapse map if eidth is less than 480px.
 }
+*/
 
-.site-header-map-tokyo {
-	position:absolute;
-	top: 60%;
-	left: 70%;
-	width: auto;
-	margin: 0;
-}
-
-.site-header-map-kyoto {
-	position:absolute;
-	top: 65%;
-	left: 50%;
-	width: auto;
-	margin: 0;
-}
-
+/* botsu 20180623
 .site-header-logo {
-   position: absolute;
-   top: 10%;
-   left: 10%;
-   width: 50%;
-   height: 50%;
-   margin: 0;
+	position: absolute;
+	top: 28%;
+	left: 8%;
+	width: 55vw;
+	height: 50vh;
+	margin: 0;
 }
 
 .site-header-description {
-	font-size: 1.2rem;
+	/* calcに時間がかかるのでコメントアウト
+	font-size: calc(112.5% + 0.1vw);
+	*/
+	/*	
+	font-weight: bold;
+	*/
+	/* botsu 20180623
+	font-size: 5vw;
+	color: #ffffff;
+	text-align: left;
+	margin: 2% 0 0 0;
+	text-shadow:
+	1.5px 1.5px 1.5px #000;
+}
+*/
+
+/*　次回リリース時に実装
+.site-header-map-city {
+	position:absolute;
+	width: auto;
+	margin: 0;
+}
+
+.site-header-map-tokyo {
+	top: 62%;
+	left: 79%;
+}
+
+.site-header-map-kyoto {
+	top: 75%;
+	left: 70%;
+}
+
+.site-header-map-tag {
+	width: 25px;
+}
+
+.site-header-map-city-text {
 	color: #eee;
-	margin: 0 0 0 5%;
+	font-size: 1.5rem;
+	text-shadow:
+	1px 1px 1px #000;
 }
 
 .site-header-search {
 	position: absolute;
 	bottom: 10%;
 	right: 5%;
-	width: auto;
-	height: auto;
+	width: 15%;
+	height: 15%;
 	margin: 0;
 }
+*/
 
 .site-main {
-	background-color: #eaeef1;
-  display: flex; /* or inline-flex */
+	font-size: 1.3em;
+	padding-top: 2%;
+	padding-right: 0%;
+	padding-left: 0%;
+	background-color: #FCFFF5;
+	display: flex; 	
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: center;
+}
+
+/* pagenation */
+.pagination_setting {
+	width: 100%;
+}
+.pagination {
+	clear: both;
+	padding: 20px 0;
+	position: relative;
+	font-size: 1em;;
+	line-height: 1em;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.pagination-box {
+	display: inline-block;
+}
+.pagination span, .pagination a {
+	display: block;
+	float: left;
+	margin: 2px 2px 2px 0;
+	padding: 10px 14px 10px 14px;
+	text-decoration: none;
+	width: auto;
+	color: #fff;
+	background: #F9D635;
+	border-radius: 50%;
+}
+.pagination span.page-of {
+	background: none;
+	color: #508B24;
+}
+.pagination a:hover{
+	color: #FFFFFF;
+	background: #79D337;
+}
+.pagination .current{
+	padding: 10px 14px 10px 14px;
+	background: #69B62D;
+	color: #FFFFFF;
+}
+/*　他のデザインが崩れるのでコメントアウト
+@media only screen and (max-width: 413px) {
+.pagination {
+	font-size: 12px;
+	line-height: 12px;
+}
+*/
+.pagination span, .pagination a {
+	padding: 4px 10px 4px 10px;
+}
+.pagination .current{
+	padding: 4px 10px 4px 10px;
 }
 
 /* site-subcontents */
@@ -680,7 +769,7 @@ a:hover, a:active {
 
 .site-subcontents-text1 {
 	font-size: 1.2em;
-	width: 30%;
+	width: 35%;
 	padding-right: 10px;
 	padding-left: 10px;
 	line-height: 1.8em;
@@ -689,7 +778,7 @@ a:hover, a:active {
 }
 
 .site-subcontents-text2 {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	width: 70%;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -747,7 +836,9 @@ a:hover, a:active {
 .site-subcontents-combini-jpn {
 	width :250px;
 	padding-bottom: 20px;
-	font-family: "ヒラギノUD角ゴ Std";
+	font-size: 0.9em;
+	font-family: 'ヒラギノUD角ゴ Std', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+
 }
 
 .site-subcontents-ingredients1 {
@@ -761,7 +852,15 @@ a:hover, a:active {
 }
 
 .site-subcontents-ingredients2 {
-	padding-bottom:60px;
+	padding-bottom:50px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-content: space-between;
+	align-items: flex-start;
+}
+.site-subcontents-ingredients2_h {
+	padding-top: 60px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-around;
@@ -791,69 +890,82 @@ a:hover, a:active {
 }
 
 .site-subcontents-ingredients-jpn {
-	font-family: "ヒラギノ角ゴオールドStdN";
+	font-family: 'ヒラギノ角ゴオールドStdN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 	font-size: 1em;
 	line-height: 1.8em;
 }
 
 .site-subcontents-ingredients-jpn2 {
-	font-family: "ヒラギノ角ゴオールドStdN";
-	font-size: 0.7em;
+	font-family: 'ヒラギノ角ゴオールドStdN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+	font-size: 0.8em;
 	line-height: 1.2em;
 
 }
 
 .site-subcontents-ingredients-warning {
-	width: 80%;
+	width: 50%;
+	min-width: 400px;
+	padding-left: 20px;
+	padding-right: 20px;
 	line-height: 1.8em;
-	padding-bottom: 30px;
+	padding-bottom: 70px;
 }
 
 /* site-footer */
 .site-footer {
 	font-weight: 400;
-	padding-bottom: 20px;
-	background-color: #515151;
+	padding-top: 15px;
+	background-color: #6fbc6f;
 	color: #FFFFFF;
-}
-
-.site-footer-disclaimer {
+	display: block;
 	padding-top: 20px;
 }
 
-.site-footer-disclaimer-text {
-	padding-top: 5px;
-	padding-bottom: 30px;
-	line-height: 1.8em;
-}
-
+/*sns icon*/
 .site-footer-SNS {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: #60C8D3;
-}
-
-.site-footer-SNS1 {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-around;
+	justify-content: center; /*or space-around*/
 	align-content: center;
 	align-items: center;
 	width: 40%;
+	padding: 30px;
+	min-width: 400px;
 	margin: auto;
 }
 
 .site-footer-SNS-icon {
-	padding-right: 3px;
-	padding-left: 3px;
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 .site-footer-email {
-	padding-left: 3px;	
+	padding-left: 30px;	
+	padding-right: 30px;
 }
 
+
+/*disclaimar*/
+.site-footer-disclaimer {
+	padding-top: 20px;
+	width: 30%;
+}
+
+.site-footer-disclaimer-text {
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	line-height: 1.8em;
+	width: 45%;
+	min-width: 400px;
+}
+
+/*copyright*/
 .site-footer-copyright {
-	padding-top: 15px;
+	padding-top: 8px;
+	background-color: #2d2d2d;
+	color: #FFFFFF;
 }
 
 /*--------------------------------------------------------------
@@ -984,7 +1096,7 @@ a:hover, a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 0em 0 0;
 }
 
 .page-links {
