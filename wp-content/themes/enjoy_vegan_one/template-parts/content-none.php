@@ -36,15 +36,23 @@
 		<?php elseif ( is_search() ) : ?>
 
 			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'enjoy_vegan_one' ); ?></p>
+
 			<?php
+			/* Search Formはside-barに含まれているので削除
 				get_search_form();
+			*/
+			else : 
+			?>
 
-		else : ?>
+			<p><?php 
+			esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'enjoy_vegan_one' ); ?></p>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'enjoy_vegan_one' ); ?></p>
 			<?php
+			/* Search Formはside-barに含まれているので削除
 				get_search_form();
-
-		endif; ?>
+			*/
+		endif; 
+		?>
+		
 	</div><!-- .page-content -->
 </section><!-- .no-results -->

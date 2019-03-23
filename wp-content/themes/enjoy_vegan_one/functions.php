@@ -180,3 +180,28 @@ function pagination($pages = '', $range = 1)
 		echo "</div></div>\n";
 	}
 }
+
+/* --------------------------
+  the_archive_title 余計な文字を削除　2019/3/24
+ ------------------------- */
+
+add_filter( 'get_the_archive_title', function ($title) {
+    if (is_category()) {
+        $title = single_cat_title('',false);
+    } elseif (is_tag()) {
+        $title = single_tag_title('',false);
+	} elseif (is_tax()) {
+	    $title = single_term_title('',false);
+	} elseif (is_post_type_archive() ){
+		$title = post_type_archive_title('',false);
+	} elseif (is_date()) {
+	    $title = get_the_time('F,Y');
+	} elseif (is_search()) {
+	    $title = 'Search Result:'.esc_html( get_search_query(false) );
+	} elseif (is_404()) {
+	    $title = '404 error: Page not found';
+	} else {
+
+	}
+    return $title;
+});
