@@ -111,7 +111,7 @@ dfn {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 1.5em;
 	margin: 0.67em 0;
 }
 
@@ -929,8 +929,8 @@ a:hover, a:active {
 	align-content: center;
 	align-items: center;
 	width: 40%;
-	padding: 30px;
-	min-width: 400px;
+	padding: 25px 0px;
+	min-width: 350px;
 	margin: auto;
 }
 
@@ -958,7 +958,7 @@ a:hover, a:active {
 	padding-bottom: 20px;
 	line-height: 1.8em;
 	width: 45%;
-	min-width: 400px;
+	min-width: 350px;
 }
 
 /*copyright*/
@@ -967,6 +967,13 @@ a:hover, a:active {
 	background-color: #2d2d2d;
 	color: #FFFFFF;
 }
+
+/*archive*/
+
+.category {
+	width: 100%;
+}
+
 
 /*--------------------------------------------------------------
 # Accessibility
