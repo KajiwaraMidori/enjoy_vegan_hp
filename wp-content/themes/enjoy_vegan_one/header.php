@@ -26,7 +26,10 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous"
 	>
-	<?php wp_head(); ?>
+
+	<?php 
+	wp_enqueue_script('jquery');
+	wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -36,76 +39,38 @@
 		</a>
 
 		<header id="masthead" class="site-header">	
-				<?php
+			<?php
 				/* 常にヘッダー表示
 				if ( is_front_page() && is_home() ){
 					*/
-				?>
-				
+					?>
+
+					<a	href="<?php echo esc_url( home_url( '/' ) );?>" rel="home">
 					<img
-					class="site-header-image"
-					src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/main_img.jpg"
+					class="topImg"
+					src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/main_img_pc.jpg"
 					alt=""
 					/>
 
-					<?php
-					/*	次回リリース時に実装
-					<div class="site-header-map-city site-header-map-tokyo">
-						<a
-							href="<?php echo esc_url(get_category_link( get_cat_ID( "tokyo" ))); ?>"
-							rel="search in Tokyo"
-							>
-							<img
-								class="site-header-map-tag"
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/hashtag_s.svg"
-							/>
-							<label class="site-header-map-city-text" style="font-style: bold">Tokyo</label>
-						</a>
-					</div>
-					<div class="site-header-map-city site-header-map-kyoto">
-						<a
-							href="<?php echo esc_url(get_category_link( get_cat_ID( "kyoto" ))); ?>"
-							rel="search in Kyoto"
-							>
-							<img
-								class="site-header-map-tag"
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/hashtag_s.svg"
-							/>
-							<label class="site-header-map-city-text">Kyoto</label>
-						</a>
-					</div>
-					*/　
-					?>
-					<?php 
-					/*　　一時的にコメントアウト
-					<h1 class="site-header-logo">
-						<a
-							href="<?php echo esc_url( home_url( '/' ) );?>"
-							rel="home"
-							>
-							<!-- <?php the_custom_logo(); ?> -->
-							<!-- <?php bloginfo( 'name' ); ?> -->
-							<img class="aligncenter"
-								src="<?php echo esc_url( get_template_directory_uri() );?>/images/1_header/evj_logo.svg"
-								alt="Enjoy Vegan Japan logo" width="1050" height="1050"
-							/>
-						</a>
-					
-					<?php
-						$description = get_bloginfo( 'description', 'display' );
-						if ( $description || is_customize_preview() ){
-					?>
-					<div class="site-header-description">
-						<?php echo $description; /* WPCS: xss ok. */ 
-						?>
-					</div>
-				</h1>
+					<script type="text/javascript">
+						jQuery(function($){			
+							var width = $(window).width();
+							if( width < 813 ){
+								$(".topImg").each(function(){
+									$(this).attr("src", $(this).attr("src").replace("_pc","_sp"));
+								})
+							}
+						});
+					</script>
+
+
+
 					<?php
 						/* }　
-						 /*↑常にヘッダー表示する場合はコメントアウト*/
-					?>
-					
-				<?php 
+						/*↑常にヘッダー表示する場合はコメントアウト*/
+						?>
+
+						<?php 
 				/* 常にヘッダー表示
 				} else {
 				?>
@@ -144,4 +109,4 @@
 			</nav> <!#site-navigation -->
 		</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+		<div id="content" class="site-content">

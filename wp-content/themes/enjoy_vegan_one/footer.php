@@ -76,7 +76,7 @@
 		</footer><!-- #colophon -->
 
 		<div class="site-footer-copyright aligncenter">
-			Copyright &#9426 2018 <?php bloginfo('name'); ?> All Rights Reserved.
+			Copyright &#9426 2019 <?php bloginfo('name'); ?> All Rights Reserved.
 		</div><!-- .site-footer-copyright -->
 
 	</div><!-- #page -->

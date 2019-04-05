@@ -610,78 +610,6 @@ a:hover, a:active {
 */
 }
 
-/* tsubasa
-.site-header-image {
-	width: 100%;
-	height: 80%;
-	/* TODO: collapse map if eidth is less than 480px.
-}
-*/
-
-/* botsu 20180623
-.site-header-logo {
-	position: absolute;
-	top: 28%;
-	left: 8%;
-	width: 55vw;
-	height: 50vh;
-	margin: 0;
-}
-
-.site-header-description {
-	/* calcに時間がかかるのでコメントアウト
-	font-size: calc(112.5% + 0.1vw);
-	*/
-	/*	
-	font-weight: bold;
-	*/
-	/* botsu 20180623
-	font-size: 5vw;
-	color: #ffffff;
-	text-align: left;
-	margin: 2% 0 0 0;
-	text-shadow:
-	1.5px 1.5px 1.5px #000;
-}
-*/
-
-/*　次回リリース時に実装
-.site-header-map-city {
-	position:absolute;
-	width: auto;
-	margin: 0;
-}
-
-.site-header-map-tokyo {
-	top: 62%;
-	left: 79%;
-}
-
-.site-header-map-kyoto {
-	top: 75%;
-	left: 70%;
-}
-
-.site-header-map-tag {
-	width: 25px;
-}
-
-.site-header-map-city-text {
-	color: #eee;
-	font-size: 1.5rem;
-	text-shadow:
-	1px 1px 1px #000;
-}
-
-.site-header-search {
-	position: absolute;
-	bottom: 10%;
-	right: 5%;
-	width: 15%;
-	height: 15%;
-	margin: 0;
-}
-*/
 
 .site-main {
 	font-size: 1.3em;
@@ -904,7 +832,7 @@ a:hover, a:active {
 
 .site-subcontents-ingredients-warning {
 	width: 50%;
-	min-width: 400px;
+	min-width: 80%;
 	padding-left: 20px;
 	padding-right: 20px;
 	line-height: 1.8em;
@@ -970,9 +898,19 @@ a:hover, a:active {
 
 /*archive*/
 
-.category {
-	width: 100%;
+ここいまいじってカテゴリのタイトルをcenterlizeしようとしてる
+.page-title {
+	display: block;
+	align-self: center;
+	margin-left: 100%;
 }
+
+.h1 {
+	display: block;
+	align-self: center;
+	margin-left: 100%;
+}
+
 
 
 /*--------------------------------------------------------------
