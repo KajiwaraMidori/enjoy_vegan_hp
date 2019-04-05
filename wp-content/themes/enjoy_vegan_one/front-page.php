@@ -843,9 +843,9 @@ get_header(); ?>
 
 					</div><!-- ingredients2 -->
 				</div><!-- ingredients1 -->
-				<div class="site-subcontents-ingredients-warning aligncenter" style="text-align: left">
+				<div class="site-subcontents-ingredients-warning aligncenter" style="text-align: center">
 					* These ingredients may or may not be vegan. 
-					They may contain animal-derived ingredients or processed with bone char as part of the manufacturing process. 
+					They may contain animal-derived ingredients or processed with bone char as part of the manufacturing process.<br>
 					To be sure, please inquire about these ingredients when you come across them.
 				</div><!--.site-subcontents-ingredients-warning -->
 			</div><!-- .site-subcontents -->
