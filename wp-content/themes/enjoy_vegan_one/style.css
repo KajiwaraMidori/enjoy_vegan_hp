@@ -487,11 +487,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #508B24;
+	color: #5DA029;	
 }
 
 a:visited {
-	color: midnightblue;
+	color: #2f4f4f;
 }
 
 a:hover, a:focus, a:active {
@@ -896,6 +896,17 @@ a:hover, a:active {
 	color: #FFFFFF;
 }
 
+
+.img404 {
+	width: 50%;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+}
+
+.page-content {
+	padding-bottom: 60px;
+}
+
 /*archive*/
 
 ここいまいじってカテゴリのタイトルをcenterlizeしようとしてる
@@ -903,6 +914,8 @@ a:hover, a:active {
 	display: block;
 	align-self: center;
 	margin-left: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .h1 {
@@ -1042,6 +1055,8 @@ a:hover, a:active {
 .entry-content,
 .entry-summary {
 	margin: 0em 0 0;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .page-links {
