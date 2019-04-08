@@ -487,11 +487,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #508B24;
+	color: #5DA029;	
 }
 
 a:visited {
-	color: midnightblue;
+	color: #2f4f4f;
 }
 
 a:hover, a:focus, a:active {
@@ -605,6 +605,7 @@ a:hover, a:active {
 .site-header {
 	display: block;
 	position: relative;
+	background-color: #FCFFF5;
 	/* tsubasa
 	font-weight: 700;
 */
@@ -694,6 +695,26 @@ a:hover, a:active {
 	align-content: center;
 	align-items: flex-start;
 }
+
+.site-subcontents-text0 {
+	font-size: 1.2em;
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 1.8em;
+	min-width: 320px;
+}
+
+.page-title {
+	font-size: 1.4em;
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 0.5em;
+	min-width: 320px;
+	color: #5DA029;	
+}
+
 
 .site-subcontents-text1 {
 	font-size: 1.2em;
@@ -896,20 +917,17 @@ a:hover, a:active {
 	color: #FFFFFF;
 }
 
-/*archive*/
 
-ここいまいじってカテゴリのタイトルをcenterlizeしようとしてる
-.page-title {
-	display: block;
-	align-self: center;
-	margin-left: 100%;
+.img404 {
+	width: 50%;
+	padding-top: 30px;
+	padding-bottom: 30px; 
 }
 
-.h1 {
-	display: block;
-	align-self: center;
-	margin-left: 100%;
+.page-content {
+	padding-bottom: 60px;
 }
+
 
 
 
@@ -1013,6 +1031,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .widget {
 	margin: 0 0 1.5em;
+	margin-top: 40px;
 	/* Make sure select elements fit in widgets. */
 }
 
@@ -1042,6 +1061,8 @@ a:hover, a:active {
 .entry-content,
 .entry-summary {
 	margin: 0em 0 0;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .page-links {

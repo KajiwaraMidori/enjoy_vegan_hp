@@ -12,16 +12,24 @@ get_header();
 ?>
 
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'enjoy_vegan_one' ); ?></h1>
-				</header><!-- .page-header -->
+		<section class="error-404 not-found">
+			<header class="page-header">
+				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'enjoy_vegan_one' ); ?></h1>
+			</header><!-- .page-header -->
+			<img
+			class="img404"
+			src="<?php echo esc_url( get_template_directory_uri() );?>/images/9_404/404.jpg"
+			alt=""
+			/>
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Please go back and try again.', 'enjoy_vegan_one' ); ?></p>
+
+			<div class="page-content">
+				<p><?php esc_html_e( 'It looks like nothing was found at this location. Please go back and try again.', 'enjoy_vegan_one' ); ?></p>
+
+
 
 					<!--SEARCH FORMやmost used catogories, tagsの削除>
 					/* SEARCH FORM削除
@@ -59,13 +67,13 @@ get_header();
 						the_widget( 'WP_Widget_Tag_Cloud' );
 						*/
 					?>
-					-->
+				-->
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+			</div><!-- .page-content -->
+		</section><!-- .error-404 -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 get_sidebar();
