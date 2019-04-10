@@ -12,7 +12,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<h1 class="site-subcontents-text0 aligncenter">
-			Find vegan restaurants and cafes in Japan.
+			Find yummy vegan food nearby!
 		</h1>
 
 		<?php
